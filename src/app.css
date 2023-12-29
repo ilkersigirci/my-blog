@@ -158,3 +158,15 @@ li {
 	border-radius: 8px;
 	tab-size: 2;
 }
+
+/* button {
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 3pt;
+	background-color: rgb(26, 158, 185);
+	padding: 2pt 4pt;
+	font-size: 12pt;
+	line-height: initial;
+	transition: background-color 0.2s;
+  } */

@@ -9,6 +9,23 @@
 	import '../app.css'
 
 	export let data
+
+	// NOTE: For enabling Copy Button on code blocks
+	// import { CopyButton } from 'svelte-zoo'
+	// import { afterNavigate } from '$app/navigation'
+
+	// afterNavigate(() => {
+	// 	for (const node of document.querySelectorAll('pre > code')) {
+	// 		new CopyButton({
+	// 			// use whatever Svelte component you like here
+	// 			target: node,
+	// 			props: {
+	// 				content: node.textContent ?? '',
+	// 				style: 'position: absolute; top: 1ex; right: 1ex;' // requires <pre> to have position: relative;
+	// 			}
+	// 		})
+	// 	}
+	// })
 </script>
 
 <div class="layout">
