@@ -1,0 +1,19 @@
+version: '3.9'
+name: bun-svelte
+
+networks:
+  bun_network:
+    driver: bridge
+
+services:
+  blog-markdown:
+    container_name: blog-markdown
+    # The name of the image that will be created when building this container
+    image: blog-markdown:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - bun_network
+    ports:
+      - 3010:3000
