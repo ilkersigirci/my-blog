@@ -1,2 +1,2 @@
 <h1>About</h1>
-<p>I like long walks on the beach.</p>
+<p>This is a blog website about my ideas.</p>
