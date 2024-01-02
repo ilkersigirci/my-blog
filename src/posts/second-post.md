@@ -16,9 +16,10 @@ published: true
 
 ## Svelte
 
-Media inside the **static** folder is served from `/`.
-
-![Svelte](favicon.png)
+- Media inside the **static** folder is served from `/` normally.
+  - But if you arrange routes in `src/routes/post/[slug]` form, the static media will be served from `../`.
+  - [ ] Research this
+  - ![Svelte](../favicon.png)
 
 ## Counter
 
