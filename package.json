@@ -15,7 +15,7 @@
     "test:unit": "vitest"
   },
   "devDependencies": {
-    "@neoconfetti/svelte": "^1.0.0",
+    "@neoconfetti/svelte": "^2.2.1",
     "@playwright/test": "^1.28.1",
     "@sveltejs/adapter-vercel": "^4.0.3",
     "@sveltejs/kit": "^2.0.0",
@@ -38,14 +38,14 @@
     "vitest": "^1.0.0"
   },
   "dependencies": {
-    "@fontsource/fira-mono": "^4.5.10",
+    "@fontsource/fira-mono": "^5.0.8",
     "@fontsource/jetbrains-mono": "^5.0.18",
     "@fontsource/manrope": "^5.0.18",
     "lucide-svelte": "^0.303.0",
     "open-props": "^1.6.16",
-    "rehype-slug": "^5.1.0",
-    "remark-toc": "^8.0.1",
-    "remark-unwrap-images": "^3.0.1",
+    "rehype-slug": "^6.0.0",
+    "remark-toc": "^9.0.0",
+    "remark-unwrap-images": "^4.0.0",
     "shiki": "^0.14.1",
     "svelte-zoo": "^0.4.9"
   }

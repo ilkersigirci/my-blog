@@ -1,6 +1,11 @@
-# Install
+# Blog-Markdown
+
+## Install
 
 ```bash
+# Install bun
+curl -fsSL https://bun.sh/install | bash
+
 # Using bunx instead of using npx or pnpm dlx
 bun create svelte@latest your_app
 
@@ -14,14 +19,12 @@ bun dev
 
 ```
 
-# Build
+## Build
 
 ```bash
-#build you app
+#build your app
 bun run build
 
-cd build/
-
-#server your app
-bun start
+#preview your app
+bun run preview
 ```
