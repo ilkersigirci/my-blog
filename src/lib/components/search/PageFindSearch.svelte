@@ -1,21 +1,3 @@
-<!-- <script>
-	window.addEventListener('DOMContentLoaded', (event) => {
-		new PagefindUI({ element: '#search', resetStyles: false })
-	})
-
-	window.addEventListener('keydown', (event) => {
-		if (event.key === '/' || event.key === '.') {
-			console.log('you pressed the slash')
-			event.preventDefault()
-			document.querySelector('div#search input').focus()
-		}
-	})
-</script>
-
-<div id="search" class="ml-3 p-4 -mt-8"></div>
-
--->
-
 <script>
 	import { onMount } from 'svelte'
 	import { page } from '$app/stores'
@@ -29,7 +11,16 @@
 			showSubResults: true,
 			showImages: false,
 			showEmptyFilters: false,
-			autofocus: true
+			autofocus: true,
+			// sort: { date: "desc" },
+			// bundlePath: "/pagefind/",
+			processResult: function (result) {
+				// Remove .html from result.url and result.raw_url
+				result.url = result.url.replace(/\.html$/, '')
+				result.raw_url = result.raw_url.replace(/\.html$/, '')
+
+				return result
+			}
 		})
 		pagefind.triggerSearch($page.url.searchParams.get('q'))
 		const search_input = document.querySelector('#search input')
@@ -44,7 +35,7 @@
 </script>
 
 <svelte:head>
-	<title>Search{title}</title>
+	<title>Search {title}</title>
 </svelte:head>
 
 <div id="search" />
