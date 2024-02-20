@@ -1,6 +1,24 @@
 # Blog-Markdown
 
-## Install
+## Using with npm
+
+```bash
+
+# Install dependencies
+npm i
+
+# Start the dev server
+npm run dev
+
+# Build your app
+npm run build
+
+# Preview your app
+npm run preview
+```
+
+
+## Using with Bun
 
 ```bash
 # Install bun
