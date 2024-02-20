@@ -1,5 +1,5 @@
-// import adapter from 'svelte-adapter-bun'
-import adapter from '@sveltejs/adapter-vercel'
+// import adapter from '@sveltejs/adapter-vercel'
+import adapter from '@sveltejs/adapter-static'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
 import { mdsvex, escapeSvelte } from 'mdsvex'
@@ -30,7 +30,11 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: adapter()
+		adapter: adapter({ fallback: '404.html', pages: 'build', assets: 'build' }),
+		paths: {
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+			// base: process.env.NODE_ENV === "dev" ? "" : "/my-blog",
+		}
 	}
 }
 
