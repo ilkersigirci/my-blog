@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  build_site:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,24 +27,29 @@ jobs:
         run: |
           bun run build
 
-      - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: 'build/'
-
-  deploy:
-    needs: build_site
-    runs-on: ubuntu-latest
-
-    permissions:
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
+      # - name: Upload Artifacts
+      #   uses: actions/upload-pages-artifact@v2
+      #   with:
+      #     path: 'build/'
       - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+
+  # deploy:
+  #   needs: build_site
+  #   runs-on: ubuntu-latest
+
+  #   permissions:
+  #     pages: write
+  #     id-token: write
+
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+
+  #   steps:
+  #     - name: Deploy
+  #       id: deployment
+  #       uses: actions/deploy-pages@v4
