@@ -2,6 +2,7 @@
 	import { formatDate } from '$lib/utils'
 	import * as config from '$lib/config'
 	import { PageFindSearch } from '$lib/components/search'
+	import { base } from '$app/paths'
 
 	export let data
 </script>
@@ -15,7 +16,7 @@
 	<ul class="posts">
 		{#each data.posts as post}
 			<li class="post">
-				<a href="post/{post.slug}" class="title">{post.title}</a>
+				<a href="{base}/post/{post.slug}" class="title">{post.title}</a>
 				<p class="date">{formatDate(post.date)}</p>
 				<p class="description">{post.description}</p>
 			</li>

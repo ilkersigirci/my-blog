@@ -2,6 +2,7 @@
 	import { formatDate } from '$lib/utils'
 	import * as config from '$lib/config'
 	import { page } from '$app/stores'
+	import { base } from '$app/paths'
 
 	export let data
 
@@ -20,7 +21,7 @@
 	<ul class="posts">
 		{#each data.posts as post}
 			<li class="post">
-				<a href="/post/{post.slug}" class="title">{post.title}</a>
+				<a href="{base}/post/{post.slug}" class="title">{post.title}</a>
 				<p class="date">{formatDate(post.date)}</p>
 				<p class="description">{post.description}</p>
 			</li>
@@ -30,7 +31,7 @@
 
 <div class="pagination">
 	{#each Array(totalPages) as _, idx}
-		<a href="/{idx + 1}" class={currentPage === idx ? 'text-emerald-300' : ''}>
+		<a href="{base}/{idx + 1}" class={currentPage === idx ? 'text-emerald-300' : ''}>
 			{idx + 1}
 		</a>
 	{/each}
