@@ -8,6 +8,9 @@ on:
 
 jobs:
   deploy:
+    permissions:
+      pages: write
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -36,6 +39,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+          publish_branch: gh-pages
 
   # deploy:
   #   needs: build_site
