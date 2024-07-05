@@ -18,9 +18,6 @@
 			<a href="{base}/contact">Contact</a>
 		</li>
 		<li>
-			<a href="{base}/post">All.Posts</a>
-		</li>
-		<li>
 			<a href="{base}/rss.xml" target="_blank">RSS</a>
 		</li>
 	</ul>
