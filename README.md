@@ -1,43 +1,20 @@
 # Blog-Markdown
 
-## Using with npm
+## Install && Run the App
 
 ```bash
-
-# Install dependencies
-npm i
-
-# Start the dev server
-npm run dev
-
-# Build your app
-npm run build
-
-# Preview your app
-npm run preview
-```
-
-
-## Using with Bun
-
-```bash
-# Install bun
+# Install bun - NOTE: bun is installed globally to the system
 curl -fsSL https://bun.sh/install | bash
 
-# Using bunx instead of using npx or pnpm dlx
-bun create svelte@latest your_app
-
-#Move to your app directory
-cd your_app/
-# Using bun pacakge manager
+# Using bun package manager
 bun i
 
 #start the dev server
-bun dev
+bun run dev
 
 ```
 
-## Build
+### Build
 
 ```bash
 #build your app
@@ -46,3 +23,20 @@ bun run build
 #preview your app
 bun run preview
 ```
+
+## Vercel Project Settings
+
+- Open vercel dashboard of your project
+- For project command overrides
+    - Settings -> General -> Build & Development Settings
+    - Build command: bun run build
+    - Output directory: build
+    - Install command: bun i
+    - Development command: bun run dev
+- For environment variables
+    - Go to Settings -> Environment Variables
+    - PUBLIC_URL = https://blog.ilkerflix.com
+- For custom Ignored Build Step
+    - Go to Settings -> Git -> Ignored Build Step -> Project Settings
+    - Custom -> if [ "$VERCEL_GIT_COMMIT_REF" == "gh-pages" ]; then exit 0; else exit 1; fi
+    - (Alternative) Run my bash script -> bash scripts/vercel_ignored_build_step.sh

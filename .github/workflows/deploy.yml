@@ -28,6 +28,7 @@ jobs:
       - name: build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
+          PUBLIC_URL: "https://ilkersigirci.github.io"
         run: |
           bun run build
 

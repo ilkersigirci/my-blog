@@ -1,6 +1,6 @@
-import { dev } from '$app/environment'
 import { base } from '$app/paths'
+import { PUBLIC_URL } from '$env/static/public'
 
-export const title = 'Ilkerflix Blog'
-export const description = 'Ilkerflix Blog'
-export const url = (dev ? 'http://localhost:5173' : 'https://blog.ilkerflix.com') + base
+export const title = 'Ilkerflix'
+export const description = 'Ilkerflix'
+export const url = PUBLIC_URL + base
