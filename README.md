@@ -35,4 +35,5 @@ bun run preview
     - Development command: bun run dev
 - For custom Ignored Build Step
     - Go to Settings -> Git -> Ignored Build Step -> Project Settings
-    - Run my bash script -> bash scripts/vercel_ignored_build_step.sh
+    - Custom -> if [ "$VERCEL_GIT_COMMIT_REF" == "gh-pages" ]; then exit 1; else exit 0; fi
+    - (Alternative) Run my bash script -> bash scripts/vercel_ignored_build_step.sh
