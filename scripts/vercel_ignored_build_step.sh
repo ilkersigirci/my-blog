@@ -1,8 +1,11 @@
 #!/bin/bash
 
-# If the branch is gh-pages, then we want to ignore the build step
-if [ "$VERCEL_GIT_COMMIT_REF" == "gh-pages" ]; then 
+echo "VERCEL_GIT_COMMIT_REF: $VERCEL_GIT_COMMIT_REF"
+
+if [[ "$VERCEL_GIT_COMMIT_REF" == "gh-pages" ]]; then
+    echo "🛑 - Build cancelled"
     exit 0; 
 else
+    echo "✅ - Build can proceed"
     exit 1; 
 fi
