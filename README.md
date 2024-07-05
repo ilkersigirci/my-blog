@@ -34,5 +34,5 @@ bun run preview
     - Install command: bun i
     - Development command: bun run dev
 - For custom Ignored Build Step
-    - Go to Settings -> Ignored Build Step -> Project Settings
-    - Run my bash script -> bash script/vercel_ignored_build_step.sh
+    - Go to Settings -> Git -> Ignored Build Step -> Project Settings
+    - Run my bash script -> bash scripts/vercel_ignored_build_step.sh
