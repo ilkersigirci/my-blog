@@ -3,7 +3,7 @@ import adapter from '@sveltejs/adapter-static'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
 import { mdsvex, escapeSvelte } from 'mdsvex'
-import shiki from 'shiki'
+import { createHighlighter } from 'shiki'
 import remarkUnwrapImages from 'remark-unwrap-images'
 import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
@@ -16,8 +16,12 @@ const mdsvexOptions = {
 	},
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
-			const highlighter = await shiki.getHighlighter({ theme: 'one-dark-pro' })
-			const html = escapeSvelte(highlighter.codeToHtml(code, { lang }))
+			const highlighter = await createHighlighter({
+				themes: ['one-dark-pro'],
+				langs: ['javascript', 'typescript', 'python']
+			})
+			await highlighter.loadLanguage('javascript', 'typescript', 'python')
+			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'one-dark-pro' }))
 			return `{@html \`${html}\` }`
 		}
 	},
@@ -32,7 +36,7 @@ const config = {
 	kit: {
 		adapter: adapter({ fallback: '404.html', pages: 'build', assets: 'build' }),
 		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+			base: process.argv.includes('dev') ? "" : process.env.BASE_PATH
 			// base: process.env.NODE_ENV === "dev" ? "" : "/my-blog",
 		}
 	}
