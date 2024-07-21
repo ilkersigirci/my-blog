@@ -320,8 +320,9 @@ function greet(name: string) {
 
 - Media inside the **static** folder is served from `/` normally.
   - But if you arrange routes in `src/routes/post/[slug]` form, the static media will be served from `../`.
+  - If one uses `enhanced:img` instead of default `img`, images must be located inside `src/assets/images` and they can be referenced only by their file name.
   - [ ] Research this
-  - ![Svelte](../favicon.png)
+  - ![Svelte](favicon.png)
 
 
 ## Svelte Component inside Markdown

@@ -20,7 +20,7 @@ published: true
 - Our empirical findings show that using learned descriptors of ChemBERTa produces results that are comparable with traditional and graph-based models, as shown by metrics of cluster accuracy and computing runtime.
 - Keywords: drug-target interaction, compound descriptors, representation learning,
 natural language processing, clustering
-- [Thesis Pdf](../Thesis.pdf)
+- [Thesis Pdf](../pdfs/Thesis.pdf)
 - [Github Repository](https://github.com/ilkersigirci/thesis-work)
 
 ## Method
@@ -29,4 +29,4 @@ natural language processing, clustering
 - We use 3 main compound SMILES datasets, with 3 different descriptors.
 - We also use dimensionality reduction techniques before clustering.
 - We use 4 main clustering algorithm and evaluate their performance with 3 different metrics.
-- ![Thesis.Method](../Thesis.Method.png)
+- ![Thesis.Method](ThesisMethod.png)
