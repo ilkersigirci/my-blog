@@ -4,9 +4,9 @@ import type { Post } from '$lib/types'
 async function getPosts(limit: number, skip: number) {
 	let posts: Post[] = []
 
-	const paths = import.meta.glob('/src/posts/*.md', { eager: true })
+	const paths = import.meta.glob('/src/content/*.md', { eager: true })
 
-	// TODO: Get total number of posts to show it in the pagination
+	// TODO: Get total number of content to show it in the pagination
 	// console.log('paths', Object.keys(paths).length)
 
 	for (const path in paths) {

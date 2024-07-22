@@ -1,12 +1,17 @@
 ---
-title: MD Compatibility Test
-description: MD Compatibility Test
+title: Markdown Compatibility
+description: Markdown Compatibility
 date: '2023-4-10'
 categories:
   - sveltekit
   - svelte
 published: true
 ---
+
+<script>
+  import Counter from './counter.svelte'
+</script>
+
 
 # Markdown.Syntax
 
@@ -304,3 +309,22 @@ Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:
 
 Use the `printf()` function.
+
+```ts
+function greet(name: string) {
+	console.log(`Hey ${name}! 👋`)
+}
+```
+
+## Static Image Serving
+
+- Media inside the **static** folder is served from `/` normally.
+  - But if you arrange routes in `src/routes/post/[slug]` form, the static media will be served from `../`.
+  - If one uses `enhanced:img` instead of default `img`, images must be located inside `src/assets/images` and they can be referenced only by their file name.
+  - [ ] Research this
+  - ![Svelte](favicon.png)
+
+
+## Svelte Component inside Markdown
+
+<Counter />
