@@ -18,9 +18,9 @@ const mdsvexOptions = {
 		highlighter: async (code, lang = 'text') => {
 			const highlighter = await createHighlighter({
 				themes: ['one-dark-pro'],
-				langs: ['javascript', 'typescript', 'python']
+				langs: ['python', 'bash', 'javascript', 'typescript']
 			})
-			await highlighter.loadLanguage('javascript', 'typescript', 'python')
+			await highlighter.loadLanguage('python', 'bash', 'javascript', 'typescript')
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'one-dark-pro' }))
 			return `{@html \`${html}\` }`
 		}
@@ -35,6 +35,7 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
 		adapter: adapter({ fallback: '404.html', pages: 'build', assets: 'build' }),
+		prerender: { handleHttpError: 'warn' },
 		paths: {
 			base: process.argv.includes('dev') ? "" : process.env.BASE_PATH
 		}
