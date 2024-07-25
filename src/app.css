@@ -111,6 +111,7 @@ ol {
 
 li {
 	padding-inline-start: 0;
+	/* max-width: 100%; */
 }
 
 .surface-1 {
@@ -175,6 +176,7 @@ li {
 
 pre:has(code) {
 	position: relative;
+	overflow-x: auto;
 }
 
 pre button.copy {
