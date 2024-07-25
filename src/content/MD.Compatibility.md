@@ -13,21 +13,7 @@ published: true
 </script>
 
 
-# Markdown.Syntax
-
-- [Markdown.Syntax](#markdownsyntax)
-  - [Overview](#overview)
-    - [Philosophy](#philosophy)
-  - [Block Elements](#block-elements)
-    - [Paragraphs and Line Breaks](#paragraphs-and-line-breaks)
-    - [Headers](#headers)
-    - [Blockquotes](#blockquotes)
-    - [Lists](#lists)
-    - [Code Blocks](#code-blocks)
-  - [Span Elements](#span-elements)
-    - [Links](#links)
-    - [Emphasis](#emphasis)
-    - [Code](#code)
+## Contents
 
 ## Overview
 
@@ -237,16 +223,6 @@ in both `<pre>` and `<code>` tags.
 To produce a code block in Markdown, simply indent every line of the
 block by at least 4 spaces or 1 tab.
 
-This is a normal paragraph:
-
-    This is a code block.
-
-Here is an example of AppleScript:
-
-    tell application "Foo"
-        beep
-    end tell
-
 A code block continues until it reaches a line that is not indented
 (or the end of the article).
 
@@ -264,10 +240,10 @@ Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
 it's also easy to use Markdown to write about Markdown's own syntax.
 
-```
-tell application "Foo"
-    beep
-end tell
+```python
+def foo():
+    if not bar:
+        return True
 ```
 
 ## Span Elements
