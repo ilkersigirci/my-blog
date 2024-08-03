@@ -27,7 +27,7 @@
 <style>
 	.posts {
 		display: grid;
-		gap: var(--size-7);
+		gap: var(--size-3);
 	}
 
 	.post {
@@ -40,7 +40,7 @@
 	}
 
 	.title {
-		font-size: var(--font-size-fluid-3);
+		font-size: var(--font-size-fluid-2);
 		text-transform: capitalize;
 	}
 

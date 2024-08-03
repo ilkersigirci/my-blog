@@ -4,7 +4,6 @@ import pagefind from 'vite-plugin-pagefind'
 import { enhancedImages } from '@sveltejs/enhanced-img';
 
 
-// FIXME: pagefind doesn't work with enchancedImages
 export default defineConfig({
 	plugins: [sveltekit(), pagefind(), enhancedImages()],
 	test: {
