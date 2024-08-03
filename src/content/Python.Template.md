@@ -8,6 +8,8 @@ categories:
 published: true
 ---
 
+## Contents
+
 ## Project Structure
 
 - [Github Repository](https://github.com/ilkersigirci/python-template)

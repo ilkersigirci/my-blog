@@ -1,6 +1,6 @@
 ---
 title: My Thesis
-description: My Master Thesis Work
+description: ON THE USE OF LARGE LANGUAGE MODEL FOR VIRTUAL SCREENING
 date: '2024-7-16'
 categories:
   - programming
@@ -8,7 +8,7 @@ categories:
 published: true
 ---
 
-# ON THE USE OF LARGE LANGUAGE MODEL FOR VIRTUAL SCREENING
+## Contents
 
 ## Introduction
 
