@@ -12,6 +12,7 @@
 			showImages: false,
 			showEmptyFilters: false,
 			autofocus: true,
+			// resetStyles: false,
 			// sort: { date: "desc" },
 			// bundlePath: "/pagefind/",
 			processResult: function (result) {
@@ -38,14 +39,35 @@
 	<title>Search {title}</title>
 </svelte:head>
 
-<div id="search" />
+<div id="search" class="custom_pagefind_search" />
 
-<!-- <style is:global>
-	.dark {
-		--pagefind-ui-primary: #eeeeee;
-		--pagefind-ui-text: #eeeeee;
-		--pagefind-ui-background: #152028;
-		--pagefind-ui-border: #152028;
-		--pagefind-ui-tag: #152028;
+<style>
+	:root {
+		--pagefind-ui-scale: 0.8;
+		--pagefind-ui-primary: #393939;
+		--pagefind-ui-text: #393939;
+		--pagefind-ui-background: #ffffff;
+		--pagefind-ui-border: #eeeeee;
+		--pagefind-ui-tag: #eeeeee;
+		--pagefind-ui-border-width: 2px;
+		--pagefind-ui-border-radius: 8px;
+		--pagefind-ui-image-border-radius: 8px;
+		--pagefind-ui-image-box-ratio: 3 / 2;
 	}
-</style> -->
+	/* @media (prefers-color-scheme: dark) {
+		.custom_pagefind_search {
+			--pagefind-ui-scale: 1;
+			--pagefind-ui-primary: #034ad8;
+			--pagefind-ui-text: #ffffff;
+			--pagefind-ui-background: #ffffff;
+			--pagefind-ui-border: #d21f1f;
+			--pagefind-ui-tag: #20b84d;
+			--pagefind-ui-border-width: 2px;
+			--pagefind-ui-border-radius: 8px;
+			--pagefind-ui-image-border-radius: 8px;
+			--pagefind-ui-image-box-ratio: 3 / 2;
+			--pagefind-ui-font: sans-serif;
+			--pagefind-ui-search-input-background: #ffffff;
+		}
+	} */
+</style>

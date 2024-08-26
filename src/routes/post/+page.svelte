@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
 	import * as config from '$lib/config'
-	import { PageFindSearch } from '$lib/components/search'
 	import { base } from '$app/paths'
 
 	export let data
@@ -12,7 +11,6 @@
 </svelte:head>
 
 <section>
-	<PageFindSearch />
 	<ul class="posts">
 		{#each data.posts as post}
 			<li class="post">
