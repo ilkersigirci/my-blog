@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte'
 	import { page } from '$app/stores'
 	import { PagefindUI } from '@pagefind/default-ui'
@@ -15,23 +15,30 @@
 			// resetStyles: false,
 			// sort: { date: "desc" },
 			// bundlePath: "/pagefind/",
-			processResult: function (result) {
+			processResult: function (result: any) {
 				// Remove .html from result.url and result.raw_url
 				result.url = result.url.replace(/\.html$/, '')
 				result.raw_url = result.raw_url.replace(/\.html$/, '')
-
 				return result
 			}
 		})
-		pagefind.triggerSearch($page.url.searchParams.get('q'))
-		const search_input = document.querySelector('#search input')
 
-		search_input.addEventListener('input', (e) => {
-			const search_params = new URLSearchParams(window.location.search)
-			search_params.set('q', e.target.value)
-			const new_url = `${window.location.pathname}?${search_params.toString()}`
-			history.pushState(null, '', new_url)
-		})
+		const searchInput = document.querySelector('#search input') as HTMLInputElement
+		if (searchInput) {
+			searchInput.addEventListener('input', (e: Event) => {
+				const target = e.target as HTMLInputElement
+				const searchParams = new URLSearchParams(window.location.search)
+				searchParams.set('q', target.value)
+				const newUrl = `${window.location.pathname}?${searchParams.toString()}`
+				history.pushState(null, '', newUrl)
+			})
+		}
+
+		// Trigger search with current query parameter
+		const currentQuery = $page.url.searchParams.get('q')
+		if (currentQuery) {
+			pagefind.triggerSearch(currentQuery)
+		}
 	})
 </script>
 
@@ -69,5 +76,10 @@
 			--pagefind-ui-font: sans-serif;
 			--pagefind-ui-search-input-background: #ffffff;
 		}
+	} */
+
+	/* .custom_pagefind_search {
+		width: 100%;
+		max-width: 600px;
 	} */
 </style>
