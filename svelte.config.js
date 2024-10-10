@@ -8,6 +8,7 @@ import remarkUnwrapImages from 'remark-unwrap-images'
 import { addCopyButton } from 'shiki-transformer-copy-button'
 import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
+import { enhancedImages, defaultResolverFactory } from 'mdsvex-enhanced-images'
 
 const addCopyButtonOptions = {
 	// delay time from "copied" state back to normal state
@@ -37,7 +38,13 @@ const mdsvexOptions = {
 			return `{@html \`${html}\` }`
 		}
 	},
-	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
+	remarkPlugins: [
+		enhancedImages({
+			resolve: (path) => defaultResolverFactory((path) => join('src', 'assets', 'images', path))
+		}),
+		remarkUnwrapImages,
+		[remarkToc, { tight: true }]
+	],
 	rehypePlugins: [rehypeSlug]
 }
 
