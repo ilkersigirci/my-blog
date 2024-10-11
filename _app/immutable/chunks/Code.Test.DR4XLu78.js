@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="../favicon.png" />
-		<link rel="icon" href="https://fav.farm/🖥" />
-		<!-- <link rel="alternate" type="application/atom+xml" href="/rss.xml" /> -->
-		<script type="module">
-			const theme = localStorage.getItem('color-scheme')
-
-			theme
-				? document.documentElement.setAttribute('color-scheme', theme)
-				: localStorage.setItem('color-scheme', 'dark')
-		</script>
-		
-		<link href="../_app/immutable/assets/0.CFp7euFL.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/7.DzdVFCNu.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.B9UruQyW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BVfL7dRP.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.CdQmKKWn.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.BJ_6bvPF.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/control.CYgJF_JY.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.BV4g1l7N.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.C1FmrZbK.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.CCBradaN.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.8sybJ_1q.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/config.DYmoqwFR.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.B-aNHaqP.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/spread.CgU5AtxT.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/each.D6YF6ztN.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/7.D7uQET3m.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.g5YcAAdQ.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/utils.3InfNRpA.js"><title>Code Test</title><!-- HEAD_svelte-ylbs26_START --><meta property="og:type" content="article"><meta property="og:title" content="Code Test"><!-- HEAD_svelte-ylbs26_END -->
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <div class="layout svelte-1sq3us8"><nav class="svelte-1poyso1"><a href="../" class="title svelte-1poyso1">Ilkerflix</a> <ul class="links svelte-1poyso1"><li data-svelte-h="svelte-7bxynl"><a href="../about" class="svelte-1poyso1">About</a></li> <li data-svelte-h="svelte-zswn77"><a href="../contact" class="svelte-1poyso1">Contact</a></li> <li data-svelte-h="svelte-1pgqli9"><a href="../rss.xml" target="_blank" class="svelte-1poyso1">RSS</a></li> <li><a href="/search" aria-label="Open search" class="svelte-1poyso1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-search"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></a></li></ul> <button aria-label="Toggle theme" class="svelte-114mtci"><div class="svelte-114mtci"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg> <span data-svelte-h="svelte-397x2m">Dark</span></div> </button></nav>  <main class="svelte-1sq3us8"><div class="transition svelte-vcdv4c"> <article class="svelte-sim7ny"><hgroup><h1 class="svelte-sim7ny">Code Test</h1> <p class="svelte-sim7ny">Published at Jul 25, 2024</p></hgroup> <div class="tags svelte-sim7ny"><span class="surface-4 svelte-sim7ny">#programming</span></div> <div class="prose"> <p data-svelte-h="svelte-1vxrhn2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p> <ul data-svelte-h="svelte-4uhk4n"><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</li></ul> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#C678DD">import</span><span style="color:#D19A66"> *</span><span style="color:#C678DD"> as</span><span style="color:#E06C75"> config</span><span style="color:#C678DD"> from</span><span style="color:#98C379"> '$lib/config'</span></span>
+import{s as k,f as x,h as D,e as g,a as d,H as f,j as h,c as b,g as _,b as u,k as F,i,n as w,d as y}from"./scheduler.CdQmKKWn.js";import{S as L,i as T,c as I,a as P,m as j,t as M,b as H,d as S}from"./index.CCBradaN.js";import{g as U,a as A}from"./spread.CgU5AtxT.js";import{M as G}from"./mdsvex.CV_iWGZX.js";function R(c){let s,p="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",o,e,a="<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</li>",l,t,E=`<pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#C678DD">import</span><span style="color:#D19A66"> *</span><span style="color:#C678DD"> as</span><span style="color:#E06C75"> config</span><span style="color:#C678DD"> from</span><span style="color:#98C379"> '$lib/config'</span></span>
 <span class="line"><span style="color:#C678DD">import</span><span style="color:#C678DD"> type</span><span style="color:#ABB2BF"> &#123; </span><span style="color:#E06C75">Post</span><span style="color:#ABB2BF"> &#125; </span><span style="color:#C678DD">from</span><span style="color:#98C379"> '$lib/types'</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#C678DD">export</span><span style="color:#C678DD"> async</span><span style="color:#C678DD"> function</span><span style="color:#61AFEF"> GET</span><span style="color:#ABB2BF">(&#123; </span><span style="color:#E06C75;font-style:italic">fetch</span><span style="color:#ABB2BF"> &#125;) &#123;</span></span>
@@ -106,38 +70,10 @@ export async function GET(&#123; fetch &#125;) &#123;
           navigator.clipboard.writeText(this.dataset.code);
           this.classList.add(&#x27;copied&#x27;);
           setTimeout(() => this.classList.remove(&#x27;copied&#x27;), 2000)
-        "><span class="ready"></span><span class="success"></span></button></pre><!-- HTML_TAG_END --> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic"># Long variable scroll test</span></span>
+        "><span class="ready"></span><span class="success"></span></button></pre>`,C,B,$=`<pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic"># Long variable scroll test</span></span>
 <span class="line"><span style="color:#ABB2BF">longvariablename  </span><span style="color:#56B6C2">=</span><span style="color:#98C379"> "longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename"</span></span></code><button class="copy" data-code="# Long variable scroll test
 longvariablename  = &#x22;longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename&#x22;" onclick="
           navigator.clipboard.writeText(this.dataset.code);
           this.classList.add(&#x27;copied&#x27;);
           setTimeout(() => this.classList.remove(&#x27;copied&#x27;), 2000)
-        "><span class="ready"></span><span class="success"></span></button></pre><!-- HTML_TAG_END --></div> </article></div></main> <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">Ilkerflix © 2024</p> </footer> </div> 
-			
-			<script>
-				{
-					__sveltekit_1d9h5cj = {
-						base: new URL("..", location).pathname.slice(0, -1),
-						assets: "/my-blog"
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("../_app/immutable/entry/start.B9UruQyW.js"),
-						import("../_app/immutable/entry/app.BV4g1l7N.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 7],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-</html>
+        "><span class="ready"></span><span class="success"></span></button></pre>`,m;return{c(){s=g("p"),s.textContent=p,o=d(),e=g("ul"),e.innerHTML=a,l=d(),t=new f(!1),C=d(),B=new f(!1),m=h(),this.h()},l(n){s=b(n,"P",{"data-svelte-h":!0}),_(s)!=="svelte-1vxrhn2"&&(s.textContent=p),o=u(n),e=b(n,"UL",{"data-svelte-h":!0}),_(e)!=="svelte-4uhk4n"&&(e.innerHTML=a),l=u(n),t=F(n,!1),C=u(n),B=F(n,!1),m=h(),this.h()},h(){t.a=C,B.a=m},m(n,r){i(n,s,r),i(n,o,r),i(n,e,r),i(n,l,r),t.m(E,n,r),i(n,C,r),B.m($,n,r),i(n,m,r)},p:w,d(n){n&&(y(s),y(o),y(e),y(l),t.d(),y(C),y(m),B.d())}}}function q(c){let s,p;const o=[c[0],v];let e={$$slots:{default:[R]},$$scope:{ctx:c}};for(let a=0;a<o.length;a+=1)e=x(e,o[a]);return s=new G({props:e}),{c(){I(s.$$.fragment)},l(a){P(s.$$.fragment,a)},m(a,l){j(s,a,l),p=!0},p(a,[l]){const t=l&1?U(o,[l&1&&A(a[0]),l&0&&A(v)]):{};l&2&&(t.$$scope={dirty:l,ctx:a}),s.$set(t)},i(a){p||(M(s.$$.fragment,a),p=!0)},o(a){H(s.$$.fragment,a),p=!1},d(a){S(s,a)}}}const v={title:"Code Test",description:"Code Test",date:"2024-7-25",categories:["programming"],published:!0};function z(c,s,p){return c.$$set=o=>{p(0,s=x(x({},s),D(o)))},s=D(s),[s]}class Q extends L{constructor(s){super(),T(this,s,z,q,k,{})}}export{Q as default,v as metadata};

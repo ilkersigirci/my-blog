@@ -14,34 +14,34 @@
 				: localStorage.setItem('color-scheme', 'dark')
 		</script>
 		
-		<link href="../_app/immutable/assets/0.CPzymS2n.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.CFp7euFL.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/7.DzdVFCNu.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.6ho1SSBQ.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.CZXFjx20.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.Z0-R3Vox.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.JYAFWxW7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.B9UruQyW.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BVfL7dRP.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.CdQmKKWn.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.BJ_6bvPF.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/control.CYgJF_JY.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.BFW7-uHl.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.D6kgxu3v.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.BsQ1K1nZ.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CmvPAHjO.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/config.CSVy2xMm.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.B9sDonyS.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BV4g1l7N.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.C1FmrZbK.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.CCBradaN.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.8sybJ_1q.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/config.DYmoqwFR.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.B-aNHaqP.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/spread.CgU5AtxT.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/each.D6YF6ztN.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/7.DJ49JjDy.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/7.D7uQET3m.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.g5YcAAdQ.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/utils.3InfNRpA.js"><title>How.This.Blog.Developed</title><!-- HEAD_svelte-ylbs26_START --><meta property="og:type" content="article"><meta property="og:title" content="How.This.Blog.Developed"><!-- HEAD_svelte-ylbs26_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <div class="layout svelte-1sq3us8"><nav class="svelte-1poyso1"><a href="../" class="title svelte-1poyso1">Ilkerflix</a> <ul class="links svelte-1poyso1"><li data-svelte-h="svelte-7bxynl"><a href="../about" class="svelte-1poyso1">About</a></li> <li data-svelte-h="svelte-zswn77"><a href="../contact" class="svelte-1poyso1">Contact</a></li> <li data-svelte-h="svelte-1pgqli9"><a href="../rss.xml" target="_blank" class="svelte-1poyso1">RSS</a></li> <li><a href="/search" aria-label="Open search" class="svelte-1poyso1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-search"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></a></li></ul> <button aria-label="Toggle theme" class="svelte-114mtci"><div class="svelte-114mtci"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg> <span data-svelte-h="svelte-397x2m">Dark</span></div> </button></nav>  <main class="svelte-1sq3us8"><div class="transition svelte-vcdv4c"> <article class="svelte-sim7ny"><hgroup><h1 class="svelte-sim7ny">How.This.Blog.Developed</h1> <p class="svelte-sim7ny">Published at Jul 22, 2024</p></hgroup> <div class="tags svelte-sim7ny"><span class="surface-4 svelte-sim7ny">#sveltekit</span><span class="surface-4 svelte-sim7ny">#optimization</span></div> <div class="prose"><h2 id="contents" data-svelte-h="svelte-mkui86">Contents</h2> <ul data-svelte-h="svelte-14rvix0"><li><a href="#general">General</a></li> <li><a href="#optimizations">Optimizations</a></li></ul> <h2 id="general" data-svelte-h="svelte-gqtcke">General</h2> <ul data-svelte-h="svelte-1xuqwqv"><li></li> <li>Built using SvelteKit</li></ul> <h2 id="optimizations" data-svelte-h="svelte-110rbje">Optimizations</h2> <ul data-svelte-h="svelte-1rrbfwg"><li>Enable pre-render</li> <li>Unlike other SSGs, prerendered SvelteKit still allows for client-side hydration, so I can still use smooth client-side routing and transitions.</li> <li>Use static adapter</li> <li>For images, use AVIF / WebP instead of PNG / JPEG
+		<div style="display: contents">  <div class="layout svelte-1sq3us8"><nav class="svelte-1poyso1"><a href="../" class="title svelte-1poyso1">Ilkerflix</a> <ul class="links svelte-1poyso1"><li data-svelte-h="svelte-7bxynl"><a href="../about" class="svelte-1poyso1">About</a></li> <li data-svelte-h="svelte-zswn77"><a href="../contact" class="svelte-1poyso1">Contact</a></li> <li data-svelte-h="svelte-1pgqli9"><a href="../rss.xml" target="_blank" class="svelte-1poyso1">RSS</a></li> <li><a href="/search" aria-label="Open search" class="svelte-1poyso1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-search"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></a></li></ul> <button aria-label="Toggle theme" class="svelte-114mtci"><div class="svelte-114mtci"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg> <span data-svelte-h="svelte-397x2m">Dark</span></div> </button></nav>  <main class="svelte-1sq3us8"><div class="transition svelte-vcdv4c"> <article class="svelte-sim7ny"><hgroup><h1 class="svelte-sim7ny">How.This.Blog.Developed</h1> <p class="svelte-sim7ny">Published at Jul 22, 2024</p></hgroup> <div class="tags svelte-sim7ny"><span class="surface-4 svelte-sim7ny">#sveltekit</span><span class="surface-4 svelte-sim7ny">#optimization</span></div> <div class="prose"> <h2 id="contents" data-svelte-h="svelte-mkui86">Contents</h2> <ul data-svelte-h="svelte-14rvix0"><li><a href="#general">General</a></li> <li><a href="#optimizations">Optimizations</a></li></ul> <h2 id="general" data-svelte-h="svelte-gqtcke">General</h2> <ul data-svelte-h="svelte-1xuqwqv"><li></li> <li>Built using SvelteKit</li></ul> <h2 id="optimizations" data-svelte-h="svelte-110rbje">Optimizations</h2> <ul data-svelte-h="svelte-1rrbfwg"><li>Enable pre-render</li> <li>Unlike other SSGs, prerendered SvelteKit still allows for client-side hydration, so I can still use smooth client-side routing and transitions.</li> <li>Use static adapter</li> <li>For images, use AVIF / WebP instead of PNG / JPEG
 <ul><li>Use Sveltekit <a href="https://kit.svelte.dev/docs/images#sveltejs-enhanced-img-srcset-and-sizes" rel="nofollow">enhanced:img</a></li></ul></li> <li>Optimize fonts by reducing their size
 <ul><li>Only import the necessary weights and subsets for each font</li> <li>use woff2 files</li> <li>For hosting fonts, Fontsource can be used</li></ul></li> <li>Use inline CSS
 <ul><li>It eliminates the need for an extra request to fetch an external CSS file</li> <li>However, it prevents the browser from caching the CSS file</li> <li>So while the initial load time can be faster, subsequent navigations may be slower.</li> <li>This is a worthy trade-off for blog pages where initial load time is much more important</li></ul></li></ul></div> </article></div></main> <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">Ilkerflix © 2024</p> </footer> </div> 
 			
 			<script>
 				{
-					__sveltekit_leqj4v = {
+					__sveltekit_1d9h5cj = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						assets: "/my-blog"
 					};
@@ -51,8 +51,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.6ho1SSBQ.js"),
-						import("../_app/immutable/entry/app.BFW7-uHl.js")
+						import("../_app/immutable/entry/start.B9UruQyW.js"),
+						import("../_app/immutable/entry/app.BV4g1l7N.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 7],
