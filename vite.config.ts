@@ -8,9 +8,4 @@ export default defineConfig({
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	}
-	// resolve: {
-	// 	alias: {
-	// 		$img: path.resolve('src/assets/images')
-	// 	}
-	// }
 })
