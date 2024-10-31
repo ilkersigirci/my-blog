@@ -1,45 +1,36 @@
 <script lang="ts">
-	import Footer from './footer.svelte'
-	import Header from './header.svelte'
-	import PageTransition from './transition.svelte'
+	import '../app.css';
+	import { onNavigate } from '$app/navigation';
+	import { MenuContent, Metatags, Navbar } from '$lib/components/site';
+	import { Toaster } from '$lib/components/ui/sonner';
 
-	import 'open-props/style'
-	import 'open-props/normalize'
-	import 'open-props/buttons'
-	import '../app.css'
+	const preparePageTransition = () => {
+		onNavigate((navigation) => {
+			if (!(document as any).startViewTransition) return;
+			return new Promise((resolve) => {
+				(document as any).startViewTransition(async () => {
+					resolve();
+					await navigation.complete;
+				});
+			});
+		});
+	};
 
-	export let data
+	preparePageTransition();
+
+	let { children } = $props();
 </script>
 
-<div class="layout">
-	<Header />
-
-	<main>
-		<PageTransition url={data.url}>
-			<slot />
-		</PageTransition>
-	</main>
-
-	<Footer />
+<Metatags />
+<Toaster />
+<div class="fixed h-full w-full lg:flex" data-vaul-drawer-wrapper="">
+	<div
+		class="scrollable-area hidden h-full border-r bg-zinc-50 text-sm font-light lg:block lg:w-60 xl:w-72"
+	>
+		<MenuContent />
+	</div>
+	<Navbar />
+	<div class="flex flex-1 bg-white">
+		{@render children()}
+	</div>
 </div>
-
-<style>
-	.layout {
-		height: 100%;
-		max-inline-size: 1440px;
-		display: grid;
-		grid-template-rows: auto 1fr auto;
-		margin-inline: auto;
-		padding-inline: var(--size-7);
-	}
-
-	main {
-		padding-block: var(--size-9);
-	}
-
-	@media (min-width: 1440px) {
-		.layout {
-			padding-inline: 0;
-		}
-	}
-</style>

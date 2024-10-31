@@ -22,6 +22,12 @@ bun run build
 
 #preview your app
 bun run preview
+
+## With pagefind in package.json
+vite build && pagefind
+
+## Without pagefind in package.json
+vite build
 ```
 
 ## Vercel Project Settings
@@ -39,4 +45,9 @@ bun run preview
 - For custom Ignored Build Step
     - Go to Settings -> Git -> Ignored Build Step -> Project Settings
     - Custom -> if [ "$VERCEL_GIT_COMMIT_REF" == "gh-pages" ]; then exit 0; else exit 1; fi
-    - (Alternative) Run my bash script -> bash scripts/vercel_ignored_build_step.sh
+    - (Alternative) Run my bash script -> bash scripts/vercel_ignored_build_step.s
+
+
+## TODO
+
+- Using [official mdsvex](https://github.com/pngwn/MDsveX) package instead of [@huntabyte/mdsvex](https://github.com/huntabyte/MDsveX) breaks the code highlighting. Need to fix it.
