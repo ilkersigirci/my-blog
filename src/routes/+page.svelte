@@ -7,7 +7,7 @@
 
 	let { data } = $props();
 
-	headerTitle.value = 'Prabhu Kiran Konda';
+	headerTitle.value = 'Ilker SIGIRCI';
 </script>
 
 <Scrollarea class="w-full">

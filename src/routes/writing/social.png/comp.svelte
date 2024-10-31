@@ -58,7 +58,7 @@
 			borderRadius: 9999;
 		"
 	>
-		Prabhu Kiran Konda
+		Ilker SIGIRCI
 	</div>
 	{#if isSeries}
 		<div class="right-15 top-15 absolute flex">

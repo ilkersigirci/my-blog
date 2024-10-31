@@ -1,10 +1,14 @@
 ---
 title: Code Test
-description: Code Test
+description: This is a long code formatted code part for testing markdown to html highlight and scroll
 date: '2024-7-25'
-categories:
-  - programming
-published: true
+image: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*PLD7lQ5hH8_6QVfDtCflcg.png
+icon: '/posts/logo.png'
+useIconInHome: true
+tags:
+  - SvelteKit
+  - Programming
+draft: false
 ---
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum

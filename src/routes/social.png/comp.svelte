@@ -50,7 +50,7 @@
 			borderRadius: 9999;
 		"
 	>
-		Prabhu Kiran Konda
+		Ilker SIGIRCI
 	</div>
 	<span
 		style="

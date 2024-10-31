@@ -1,11 +1,14 @@
 ---
 title: Python Template
 description: My Custom Python Project Template
-date: '2024-7-16'
-categories:
-  - programming
-  - python
-published: true
+date: '2024-7-28'
+image: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*PLD7lQ5hH8_6QVfDtCflcg.png
+icon: '/posts/logo.png'
+useIconInHome: true
+tags:
+  - Programming
+  - Python
+draft: false
 ---
 
 ## Contents

@@ -9,7 +9,7 @@ techstack:
     - PostgreSQL
     - Drizzle
     - Stripe
-cover: '/corgi-ai-dashboard.png'
+cover: '/logo.jpg'
 source: 'https://github.com/PrabhuKiran8790/corgi-docker'
 order: 2
 ---

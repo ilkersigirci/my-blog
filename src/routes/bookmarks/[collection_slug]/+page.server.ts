@@ -1,6 +1,8 @@
 // import { RAINDROP_CLIENT_SECRET } from '$env/static/private';
 import type { Bookmark } from '$lib/types';
 
+export const prerender = false;
+
 export const load = async ({ params, parent, fetch, setHeaders }) => {
 	const { collections } = await parent();
 	const awaitedCollections = await collections;

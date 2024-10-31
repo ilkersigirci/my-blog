@@ -1,11 +1,13 @@
 ---
 title: My Thesis
 description: ON THE USE OF LARGE LANGUAGE MODEL FOR VIRTUAL SCREENING
-date: '2024-7-16'
-categories:
-  - programming
-  - thesis
-published: true
+date: '2024-7-27'
+image: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*PLD7lQ5hH8_6QVfDtCflcg.png
+icon: '/posts/logo.png'
+useIconInHome: true
+tags:
+  - Programming
+draft: false
 ---
 
 ## Contents
@@ -29,4 +31,4 @@ natural language processing, clustering
 - We use 3 main compound SMILES datasets, with 3 different descriptors.
 - We also use dimensionality reduction techniques before clustering.
 - We use 4 main clustering algorithm and evaluate their performance with 3 different metrics.
-- ![Thesis.Method](ThesisMethod.png)
+- ![Thesis.Method](/ThesisMethod.png)

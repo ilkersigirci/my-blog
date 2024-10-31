@@ -10,8 +10,8 @@ import {
 // import { X } from './icons';
 
 export const owner = {
-	name: 'Prabhu Kiran Konda',
-	title: 'Software Engineer'
+	name: 'Ilker SIGIRCI',
+	title: 'Machine Learning Engineer'
 };
 
 export const routes = [

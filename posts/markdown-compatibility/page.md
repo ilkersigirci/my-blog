@@ -1,17 +1,14 @@
 ---
 title: Markdown Compatibility
-description: Markdown Compatibility
-date: '2023-4-10'
-categories:
-  - sveltekit
-  - svelte
-published: true
+description: Markdown Compatibility Description
+date: '2024-1-1'
+image: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*PLD7lQ5hH8_6QVfDtCflcg.png
+icon: '/posts/logo.png'
+useIconInHome: true
+tags:
+  - Programming
+draft: false
 ---
-
-<script>
-  import Counter from './counter.svelte'
-</script>
-
 
 ## Contents
 
@@ -105,7 +102,7 @@ and code blocks:
 Any decent text editor should make email-style quoting easy. For
 example, with BBEdit, you can make a selection and choose Increase
 Quote Level from the Text menu.
-
+<!-- 
 ### Lists
 
 Markdown supports ordered (numbered) and unordered (bulleted) lists.
@@ -212,7 +209,9 @@ to be indented *twice* -- 8 spaces or two tabs:
 - A list item with a code block:
 
         <code goes here>
+-->
 
+<!-- 
 ### Code Blocks
 
 Pre-formatted code blocks are used for writing about programming or
@@ -245,6 +244,7 @@ def foo():
     if not bar:
         return True
 ```
+-->
 
 ## Span Elements
 
@@ -298,9 +298,4 @@ function greet(name: string) {
   - But if you arrange routes in `src/routes/post/[slug]` form, the static media will be served from `../`.
   - If one uses `enhanced:img` instead of default `img`, images must be located inside `src/assets/images` and they can be referenced only by their file name.
   - [ ] Research this
-  - ![Svelte](favicon.png)
-
-
-## Svelte Component inside Markdown
-
-<Counter />
+  - ![Svelte](/favicon.png)
