@@ -13,8 +13,7 @@ draft: false
 ## Contents
 
 ## General
-
-- 
+ 
 - Built using SvelteKit
 
 ## Optimizations

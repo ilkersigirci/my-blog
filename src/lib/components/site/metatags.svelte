@@ -95,7 +95,7 @@
 
 <MetaTags
 	title={currentMeta.title}
-	titleTemplate="%s | Prabhu Kiran Konda"
+	titleTemplate="%s | Ilker SIGIRCI"
 	description={currentMeta.description}
 	canonical={currentMeta.url}
 	openGraph={{
@@ -110,13 +110,13 @@
 				alt: 'Og Image Alt'
 			}
 		],
-		siteName: 'Prabhu Kiran Konda'
+		siteName: 'Ilker SIGIRCI'
 	}}
 	twitter={{
 		handle: currentMeta.twitter?.handle || '@handle',
 		site: currentMeta.twitter?.site || '@site',
 		cardType: currentMeta.twitter?.cardType || 'summary_large_image',
-		title: `${currentMeta.twitter?.title || currentMeta.title} | Prabhu Kiran Konda`,
+		title: `${currentMeta.twitter?.title || currentMeta.title} | Ilker SIGIRCI`,
 		description: currentMeta.twitter?.description || currentMeta.description,
 		image: currentMeta.twitter?.image || currentMeta.image,
 		imageAlt: currentMeta.twitter?.imageAlt || 'Twitter image alt'

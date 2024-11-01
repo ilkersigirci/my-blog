@@ -15,14 +15,10 @@
 		<p>Work in progress 🚧</p>
 		<div class="content">
 			<PageTitle title="Home" class="lg:hidden" />
+			<p>I'm Ilker SIGIRCI, an Machine Learning Engineer based in Ankara, Turkey.</p>
 			<p>
-				Hi 👋 I'm Prabhu Kiran Konda, an Electrical Engineer, Software Developer and a writer based
-				in Hyderabad, India
-			</p>
-			<p>
-				Working as a {work.role} at {work.company}. I love training neural networks, building web
-				applications and exploring Large Language Models. When I'm not coding, I'm usually thinking
-				about physics, math, or archeology (yes, I'm a fan). Nice to meet you!
+				Working as a {work.role} at {work.company}. I'm passionate about learning the connection
+				between human and artificial brain. Also, I deploy several self-hosted services as my hobby.
 			</p>
 			<Button variant="link" class="mb-0 p-0" href="/writing">
 				<h2>Writing</h2>
