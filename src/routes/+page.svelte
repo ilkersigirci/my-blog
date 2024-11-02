@@ -12,7 +12,6 @@
 
 <Scrollarea class="w-full">
 	<div class="content-wrapper relative flex w-full flex-col">
-		<p>Work in progress 🚧</p>
 		<div class="content">
 			<PageTitle title="Home" class="lg:hidden" />
 			<p>I'm Ilker SIGIRCI, an Machine Learning Engineer based in Ankara, Turkey.</p>

@@ -5,82 +5,81 @@
 	const routes = [
 		{
 			title: 'Home',
-			description: 'Electrical Engineer, Software Developer and Writer',
+			description: 'Machine Learning Engineer',
 			image:
-				'https://prabhukirankonda.vercel.app/social.png?title=Prabhu Kiran Konda&description=Electrical Engineer, Software Developer and Writer',
-			url: 'https://prabhukirankonda.vercel.app/',
+				'https://blog.ilkerflix.com/social.png?title=Ilker SIGIRCI&description=Machine Learning Engineer',
+			url: 'https://blog.ilkerflix.com/',
 			twitter: {
 				cardType: 'summary_large_image',
 				image:
-					'https://prabhukirankonda.vercel.app/social.png?title=Prabhu Kiran Konda&description=Electrical Engineer, Software Developer and Writer',
-				imageAlt: 'Prabhu Kiran Konda',
-				site: '@prabhukirantwt',
-				creator: '@prabhukirantwt',
-				handle: '@prabhukirantwt'
+					'https://blog.ilkerflix.com/social.png?title=Ilker SIGIRCI&description=Machine Learning Engineer',
+				imageAlt: 'Ilker SIGIRCI',
+				site: '@ilkersigirci',
+				creator: '@ilkersigirci',
+				handle: '@ilkersigirci'
 			}
 		},
 		{
 			title: 'Bookmarks',
 			description: 'A collection of bookmarks that I find interesting',
 			image:
-				'https://prabhukirankonda.vercel.app/social.png?title=Bookmarks&description=A collection of bookmarks that I find interesting',
-			url: 'https://prabhukirankonda.vercel.app/bookmarks',
+				'https://blog.ilkerflix.com/social.png?title=Bookmarks&description=A collection of bookmarks that I find interesting',
+			url: 'https://blog.ilkerflix.com/bookmarks',
 			twitter: {
 				cardType: 'summary_large_image',
 				image:
-					'https://prabhukirankonda.vercel.app/social.png?title=Bookmarks&description=A collection of bookmarks that I find interesting',
+					'https://blog.ilkerflix.com/social.png?title=Bookmarks&description=A collection of bookmarks that I find interesting',
 				imageAlt: 'Bookmarks',
-				site: '@prabhukirantwt',
-				creator: '@prabhukirantwt',
-				handle: '@prabhukirantwt'
+				site: '@ilkersigirci',
+				creator: '@ilkersigirci',
+				handle: '@ilkersigirci'
 			}
 		},
 		{
 			title: 'Writing',
 			description: 'Learnings, thoughts and ideas.',
 			image:
-				'https://prabhukirankonda.vercel.app/social.png?title=Writing&description=Learnings, thoughts and ideas.',
-			url: 'https://prabhukirankonda.vercel.app/writing',
+				'https://blog.ilkerflix.com/social.png?title=Writing&description=Learnings, thoughts and ideas.',
+			url: 'https://blog.ilkerflix.com/writing',
 			twitter: {
 				cardType: 'summary_large_image',
 				image:
-					'https://prabhukirankonda.vercel.app/social.png?title=Writing&description=Learnings, thoughts and ideas.',
+					'https://blog.ilkerflix.com/social.png?title=Writing&description=Learnings, thoughts and ideas.',
 				imageAlt: 'Writing',
-				site: '@prabhukirantwt',
-				creator: '@prabhukirantwt',
-				handle: '@prabhukirantwt'
+				site: '@ilkersigirci',
+				creator: '@ilkersigirci',
+				handle: '@ilkersigirci'
 			}
 		},
 		{
 			title: 'Journey',
 			description: 'My journey through the years',
 			image:
-				'https://prabhukirankonda.vercel.app/social.png?title=Journey&description=My journey through the years',
-			url: 'https://prabhukirankonda.vercel.app/journey',
+				'https://blog.ilkerflix.com/social.png?title=Journey&description=My journey through the years',
+			url: 'https://blog.ilkerflix.com/journey',
 			twitter: {
 				cardType: 'summary_large_image',
 				image:
-					'https://prabhukirankonda.vercel.app/social.png?title=Journey&description=My journey through the years',
+					'https://blog.ilkerflix.com/social.png?title=Journey&description=My journey through the years',
 				imageAlt: 'Journey',
-				site: '@prabhukirantwt',
-				creator: '@prabhukirantwt',
-				handle: '@prabhukirantwt'
+				site: '@ilkersigirci',
+				creator: '@ilkersigirci',
+				handle: '@ilkersigirci'
 			}
 		},
 		{
 			title: 'Work',
 			description: 'A collection of my work',
-			image:
-				'https://prabhukirankonda.vercel.app/social.png?title=Work&description=A collection of my work',
-			url: 'https://prabhukirankonda.vercel.app/work',
+			image: 'https://blog.ilkerflix.com/social.png?title=Work&description=A collection of my work',
+			url: 'https://blog.ilkerflix.com/work',
 			twitter: {
 				cardType: 'summary_large_image',
 				image:
-					'https://prabhukirankonda.vercel.app/social.png?title=Work&description=A collection of my work',
+					'https://blog.ilkerflix.com/social.png?title=Work&description=A collection of my work',
 				imageAlt: 'Work',
-				site: '@prabhukirantwt',
-				creator: '@prabhukirantwt',
-				handle: '@prabhukirantwt'
+				site: '@ilkersigirci',
+				creator: '@ilkersigirci',
+				handle: '@ilkersigirci'
 			}
 		}
 	];

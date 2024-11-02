@@ -13,7 +13,7 @@ draft: false
 ## Introduction
 
 Welcome, this will guide you through this template and how to use it. This is a SvelteKit + MDsveX Personal website and a blog completely designed with [Shadcn-Svelte](https://shadcn-svelte.com/), it has everything you need get started and you can fully customise it.
-[repo link](https://github.com/PrabhuKiran8790/prabhukirankonda-portfolio.git)
+[repo link](https://github.com/ilkersigirci/blog-markdown.git)
 
 
 ## Features
@@ -88,12 +88,12 @@ In this section we'll dicsuss about how to setup quicky and get started.
 To install, clone the repo using
 
 ```bash
-git clone https://github.com/PrabhuKiran8790/prabhukirankonda-portfolio.git
+git clone https://github.com/ilker-sigirci/blog-markdown.git
 ```
 install the node modules
 
 ```bash
-cd prabhukirankonda-portfolio && pnpm i
+cd blog-markdown && pnpm i
 ```
 and start editing the following files
  - `$lib/config.ts` which has all the links
@@ -143,29 +143,29 @@ export const routes: routesType[] = [
 // social icons with links
 const socials: socialsType[] = [
 	{
-		href: 'https://github.com/prabhukiran8790',
+		href: 'https://github.com/ilkersigirci',
 		icon: Github,
 		display: 'GitHub'
 	},
 	{
-		href: 'https://linkedin.com/in/PrabhuKiranKonda',
+		href: 'https://linkedin.com/in/ilkersigirci',
 		icon: LinkedIn,
 		display: 'LinkedIn'
 	},
 	{
-		href: 'https://x.com/prabhukirantwt',
+		href: 'https://x.com/ilkersigirci',
 		icon: X,
 		display: 'Twitter',
 		class: 'h-4 w-4'
 	},
 	{
-		href: 'mailto:prabhukiran426@gmail.com',
+		href: 'mailto:sigirci.ilker@gmail.com',
 		icon: Mail,
 		display: 'Mail',
 		class: 'h-4 w-4'
 	},
 	{
-		href: '/Prabhu Kiran Konda Resume.pdf',
+		href: '/Ilker-Sigirci-Resume.pdf',
 		icon: FileText,
 		display: 'Resume'
 	}
@@ -179,8 +179,8 @@ export const getSocials = ({ exclude }: { exclude?: string } = {}): socialsType[
 };
 
 export const githubConfig = {
-	username: 'PrabhuKiran8790',
-	repo: 'prabhukirankonda-portfolio',
+	username: 'ilkersigirci',
+	repo: 'blog-markdown',
 	branch: 'main'
 };
 ```
