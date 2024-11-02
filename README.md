@@ -1,4 +1,4 @@
-# Blog-Markdown
+# my-blog
 
 ## Install && Run the App
 

@@ -13,7 +13,7 @@ In this part we'll see how to configure Giscus comments, About Page, Projects pa
 Each post has it's own dedicated comments section based on [Giscus](https://giscus.app/). you can start by changing some environment variables to setup Giscus. In you `.env` file change the following variables.
 
 ```js
-PUBLIC_GITHUB_REPO = blog-markdown
+PUBLIC_GITHUB_REPO = my-blog
 PUBLIC_GITHUB_USERNAME = ilkersigirci
 PUBLIC_GITHUB_REPO_ID =
 PUBLIC_CATEGORY = General

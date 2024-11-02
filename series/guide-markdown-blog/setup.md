@@ -13,7 +13,7 @@ draft: false
 ## Introduction
 
 Welcome, this will guide you through this template and how to use it. This is a SvelteKit + MDsveX Personal website and a blog completely designed with [Shadcn-Svelte](https://shadcn-svelte.com/), it has everything you need get started and you can fully customise it.
-[repo link](https://github.com/ilkersigirci/blog-markdown.git)
+[repo link](https://github.com/ilkersigirci/my-blog.git)
 
 
 ## Features
@@ -88,12 +88,12 @@ In this section we'll dicsuss about how to setup quicky and get started.
 To install, clone the repo using
 
 ```bash
-git clone https://github.com/ilker-sigirci/blog-markdown.git
+git clone https://github.com/ilker-sigirci/my-blog.git
 ```
 install the node modules
 
 ```bash
-cd blog-markdown && pnpm i
+cd my-blog && pnpm i
 ```
 and start editing the following files
  - `$lib/config.ts` which has all the links
@@ -180,7 +180,7 @@ export const getSocials = ({ exclude }: { exclude?: string } = {}): socialsType[
 
 export const githubConfig = {
 	username: 'ilkersigirci',
-	repo: 'blog-markdown',
+	repo: 'my-blog',
 	branch: 'main'
 };
 ```
