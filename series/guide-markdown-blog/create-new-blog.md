@@ -3,7 +3,7 @@ title: Creating a new Blog
 description: Let's look at how to create a new Blog (Indivdual & Series)
 date: '2023-12-20'
 order: 2
-image: https://res.cloudinary.com/practicaldev/image/fetch/s--YFzS8yLr--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w9o5387e8s37g7r4i6dy.png
+image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
 draft: false
 ---
 
@@ -106,7 +106,7 @@ date: '2023-12-20'
 tags:
   - SvelteKit
   - MDsveX
-image: https://res.cloudinary.com/practicaldev/image/fetch/s--YFzS8yLr--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w9o5387e8s37g7r4i6dy.png
+image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
 draft: false
 ---
 ```
@@ -118,7 +118,7 @@ title: Creating a new Blog
 description: Let's look at how to create a new Blog (Indivdual & Series)
 date: '2023-12-20'
 order: 2
-image: https://res.cloudinary.com/practicaldev/image/fetch/s--YFzS8yLr--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w9o5387e8s37g7r4i6dy.png
+image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
 draft: false
 ---
 ```
@@ -281,8 +281,6 @@ this becomes
 ```math
 \nabla \times \mathbf{B} = \mu_0 \left(\mathbf{J} + \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}\right)
 ```
-
-in the next part, we'll look at other configurations.
 
 ---
  

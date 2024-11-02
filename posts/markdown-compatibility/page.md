@@ -2,9 +2,9 @@
 title: Markdown Compatibility
 description: Markdown Compatibility Description
 date: '2024-1-1'
-image: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*PLD7lQ5hH8_6QVfDtCflcg.png
-icon: '/posts/logo.png'
-useIconInHome: true
+image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
+icon: '/posts/logo.jpg'
+useIconInHome: false
 tags:
   - Programming
 draft: true
@@ -299,3 +299,49 @@ function greet(name: string) {
   - If one uses `enhanced:img` instead of default `img`, images must be located inside `src/assets/images` and they can be referenced only by their file name.
   - [ ] Research this
   - ![Svelte](/favicon.png)
+
+
+## Long Code Block
+
+```ts
+import * as config from '$lib/config'
+import type { Post } from '$lib/types'
+
+export async function GET({ fetch }) {
+	const response = await fetch('api/posts')
+	const posts: Post[] = await response.json()
+
+	const headers = { 'Content-Type': 'application/xml' }
+
+	const xml = `
+		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+			<channel>
+				<title>${config.title}</title>
+				<description>${config.description}</description>
+				<link>${config.url}</link>
+				<atom:link href="${config.url}/rss.xml" rel="self" type="application/rss+xml"/>
+				${posts
+					.map(
+						(post) => `
+						<item>
+							<title>${post.title}</title>
+							<description>${post.description}</description>
+							<link>${config.url}/${post.slug}</link>
+							<guid isPermaLink="true">${config.url}/${post.slug}</guid>
+							<pubDate>${new Date(post.date).toUTCString()}</pubDate>
+						</item>
+					`
+					)
+					.join('')}
+			</channel>
+		</rss>
+	`.trim()
+
+	return new Response(xml, { headers })
+}
+```
+
+```python
+# Long variable scroll test
+longvariablename  = "longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename_longvariablename"
+```
