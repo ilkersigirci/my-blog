@@ -56,16 +56,3 @@ export type Collection = {
 	cover: [];
 	slug: string;
 };
-
-export type Bookmark = {
-	_id: number;
-	link: string;
-	title: string;
-	excerpt: string;
-	note: string;
-	cover: string;
-	tags: string[];
-	removed: boolean;
-	domain: string;
-	collectionId: number;
-};

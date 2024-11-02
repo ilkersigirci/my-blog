@@ -1,12 +1,4 @@
-import {
-	Sparkles,
-	PencilLine,
-	MousePointer2,
-	FolderKanban,
-	Bookmark,
-	Github,
-	Linkedin
-} from 'lucide-svelte';
+import { Sparkles, PencilLine, MousePointer2, FolderKanban, Github, Linkedin } from 'lucide-svelte';
 // import { X } from './icons';
 
 export const owner = {
@@ -35,11 +27,6 @@ export const routes = [
 		name: 'Work',
 		path: '/work',
 		icon: FolderKanban
-	},
-	{
-		name: 'Bookmarks',
-		path: '/bookmarks',
-		icon: Bookmark
 	}
 ];
 

@@ -22,10 +22,6 @@
 	let isBlogLinkOpened = $derived(
 		pathSegments[1] === 'writing' && pathSegments[2] !== undefined && pathSegments[2] !== ''
 	);
-
-	let isBookmarksLinkOpened = $derived(
-		pathSegments[1] === 'bookmarks' && pathSegments[2] !== undefined && pathSegments[2] !== ''
-	);
 </script>
 
 <div
@@ -44,7 +40,7 @@
 			<span id="headerTitle" class="max-w-[70dvw] pr-3">{headerTitle.value}</span>
 		</button>
 
-		{#if isBlogLinkOpened || isBookmarksLinkOpened}
+		{#if isBlogLinkOpened}
 			<button
 				onclick={() => {
 					// go back to the previous page

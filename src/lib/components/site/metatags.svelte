@@ -20,22 +20,6 @@
 			}
 		},
 		{
-			title: 'Bookmarks',
-			description: 'A collection of bookmarks that I find interesting',
-			image:
-				'https://blog.ilkerflix.com/social.png?title=Bookmarks&description=A collection of bookmarks that I find interesting',
-			url: 'https://blog.ilkerflix.com/bookmarks',
-			twitter: {
-				cardType: 'summary_large_image',
-				image:
-					'https://blog.ilkerflix.com/social.png?title=Bookmarks&description=A collection of bookmarks that I find interesting',
-				imageAlt: 'Bookmarks',
-				site: '@ilkersigirci',
-				creator: '@ilkersigirci',
-				handle: '@ilkersigirci'
-			}
-		},
-		{
 			title: 'Writing',
 			description: 'Learnings, thoughts and ideas.',
 			image:
