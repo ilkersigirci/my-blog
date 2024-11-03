@@ -3,8 +3,9 @@ title: My Thesis
 description: ON THE USE OF LARGE LANGUAGE MODEL FOR VIRTUAL SCREENING
 date: '2024-7-27'
 image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
+# Not working on vercel
 icon: '/posts/logo.jpg'
-useIconInHome: true
+useIconInHome: false
 tags:
   - Programming
 draft: false

@@ -4,7 +4,8 @@ description: Understanding the optimizations and technologies used in building t
 date: '2024-7-26'
 image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
 icon: '/posts/logo.jpg'
-useIconInHome: true
+# Not working on vercel
+useIconInHome: false
 tags:
   - SvelteKit
 draft: false
