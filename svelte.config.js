@@ -1,5 +1,5 @@
-// import adapter from '@sveltejs/adapter-vercel';
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-vercel';
+// import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 // import { mdsvex } from 'mdsvex';
 import { mdsvex } from '@huntabyte/mdsvex';
@@ -11,7 +11,8 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 
 	kit: {
-		adapter: adapter({ fallback: '404.html', pages: 'build', assets: 'build' }),
+		// adapter: adapter({ fallback: '404.html', pages: 'build', assets: 'build' }),
+		adapter: adapter(),
 		prerender: { handleHttpError: 'warn' },
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
