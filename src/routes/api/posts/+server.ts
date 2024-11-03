@@ -1,30 +1,37 @@
-import { json } from '@sveltejs/kit'
-import type { Post } from '$lib/types'
+import { json, type RequestHandler } from '@sveltejs/kit';
+import { getPosts, getSeriesPosts, groupPostsByTag } from '$lib/posts';
 
-async function getPosts() {
-	let posts: Post[] = []
+export const GET: RequestHandler = async ({ url }) => {
+	const posts = await getPosts();
+	const seriesPosts = await getSeriesPosts();
 
-	const paths = import.meta.glob('/src/content/*.md', { eager: true })
+	if (url.searchParams.get('latest') == 'true') {
+		// compare dates to get latest post
 
-	for (const path in paths) {
-		const file = paths[path]
-		const slug = path.split('/').at(-1)?.replace('.md', '')
+		const top5LatestPosts = posts.slice(0, 5);
+		const seriesLatest = seriesPosts[0];
 
-		if (file && typeof file === 'object' && 'metadata' in file && slug) {
-			const metadata = file.metadata as Omit<Post, 'slug'>
-			const post = { ...metadata, slug } satisfies Post
-			post.published && posts.push(post)
+		if (!seriesLatest) {
+			return json(top5LatestPosts);
 		}
+
+		const top5LatestSeriesPosts = seriesPosts.slice(0, 5);
+		const allSeriesSubPosts = top5LatestSeriesPosts.map((series) => series.subPosts).flat();
+		const allLatestPosts = [...top5LatestPosts, ...allSeriesSubPosts];
+		const latestPosts = allLatestPosts
+			.toSorted((first, second) => new Date(second.date).getTime() - new Date(first.date).getTime())
+			.slice(0, 5);
+
+		return json(latestPosts);
 	}
 
-	posts = posts.sort(
-		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
-	)
+	if (url.searchParams.get('tags') == 'true') {
+		return json(await groupPostsByTag());
+	}
 
-	return posts
-}
+	if (url.searchParams.get('series') == 'true') {
+		return json(seriesPosts);
+	}
 
-export async function GET() {
-	const posts = await getPosts()
-	return json(posts)
-}
+	return json(posts);
+};

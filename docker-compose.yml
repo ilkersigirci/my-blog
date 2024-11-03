@@ -1,15 +1,15 @@
 version: '3.9'
-name: blog-markdown
+name: my-blog
 
 networks:
   bun_network:
     driver: bridge
 
 services:
-  blog-markdown:
-    container_name: blog-markdown
+  my-blog:
+    container_name: my-blog
     # The name of the image that will be created when building this container
-    image: blog-markdown:latest
+    image: my-blog:latest
     build:
       context: .
       dockerfile: Dockerfile

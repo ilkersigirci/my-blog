@@ -1,218 +1,223 @@
-@import '@fontsource/manrope';
-@import '@fontsource/jetbrains-mono';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-html {
-	/* font */
-	--font-sans: 'Manrope', sans-serif;
-	--font-mono: 'JetBrains Mono', monospace;
-
-	/* dark */
-	--brand-dark: var(--orange-3);
-	--text-1-dark: var(--gray-3);
-	--text-2-dark: var(--gray-5);
-	--surface-1-dark: var(--gray-12);
-	--surface-2-dark: var(--gray-11);
-	--surface-3-dark: var(--gray-10);
-	--surface-4-dark: var(--gray-9);
-	--background-dark: var(--gradient-8);
-	--border-dark: var(--gray-9);
-
-	/* light */
-	--brand-light: var(--orange-10);
-	--text-1-light: var(--gray-8);
-	--text-2-light: var(--gray-7);
-	--surface-1-light: var(--gray-0);
-	--surface-2-light: var(--gray-1);
-	--surface-3-light: var(--gray-2);
-	--surface-4-light: var(--gray-3);
-	--background-light: none;
-	--border-light: var(--gray-4);
-}
-
-:root {
-	color-scheme: dark;
-
-	--brand: var(--brand-dark);
-	--text-1: var(--text-1-dark);
-	--text-2: var(--text-2-dark);
-	--surface-1: var(--surface-1-dark);
-	--surface-2: var(--surface-2-dark);
-	--surface-3: var(--surface-3-dark);
-	--surface-4: var(--surface-4-dark);
-	--background: var(--background-dark);
-	--border: var(--border-dark);
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
 	:root {
-		color-scheme: light;
+		--background: 0 0% 100%;
+		--foreground: 240 10% 3.9%;
 
-		--brand: var(--brand-light);
-		--text-1: var(--text-1-light);
-		--text-2: var(--text-2-light);
-		--surface-1: var(--surface-1-light);
-		--surface-2: var(--surface-2-light);
-		--surface-3: var(--surface-3-light);
-		--surface-4: var(--surface-4-light);
-		--background: var(--background-light);
-		--border: var(--border-light);
+		--muted: 240 4.8% 95.9%;
+		--muted-foreground: 240 3.8% 46.1%;
+
+		--popover: 0 0% 100%;
+		--popover-foreground: 240 10% 3.9%;
+
+		--card: 0 0% 100%;
+		--card-foreground: 240 10% 3.9%;
+
+		--border: 240 5.9% 90%;
+		--input: 240 5.9% 90%;
+
+		--primary: 240 5.9% 10%;
+		--primary-foreground: 0 0% 98%;
+
+		--secondary: 240 4.8% 95.9%;
+		--secondary-foreground: 240 5.9% 10%;
+
+		--accent: 240 4.8% 95.9%;
+		--accent-foreground: 240 5.9% 10%;
+
+		--destructive: 0 72.2% 50.6%;
+		--destructive-foreground: 0 0% 98%;
+
+		--ring: 240 10% 3.9%;
+
+		--radius: 0.5rem;
+	}
+
+	/* .dark {
+		--background: 240 10% 3.9%;
+		--foreground: 0 0% 98%;
+
+		--muted: 240 3.7% 15.9%;
+		--muted-foreground: 240 5% 64.9%;
+
+		--popover: 240 10% 3.9%;
+		--popover-foreground: 0 0% 98%;
+
+		--card: 240 10% 3.9%;
+		--card-foreground: 0 0% 98%;
+
+		--border: 240 3.7% 15.9%;
+		--input: 240 3.7% 15.9%;
+
+		--primary: 0 0% 98%;
+		--primary-foreground: 240 5.9% 10%;
+
+		--secondary: 240 3.7% 15.9%;
+		--secondary-foreground: 0 0% 98%;
+
+		--accent: 240 3.7% 15.9%;
+		--accent-foreground: 0 0% 98%;
+
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 0 0% 98%;
+
+		--ring: 240 4.9% 83.9%;
+	} */
+
+	::selection {
+		@apply bg-black text-white;
+	}
+
+	body {
+		@apply font-sans text-base text-gray-900;
+	}
+
+	html {
+		@apply overflow-hidden scroll-smooth antialiased;
+		text-size-adjust: 100%;
+		text-rendering: optimizeLegibility;
+	}
+
+	article {
+		@apply flex flex-col;
+	}
+
+	span > p {
+		@apply my-0;
+	}
+
+	p {
+		@apply mb-6 leading-slacker;
+	}
+
+	a,
+	button {
+		@apply cursor-pointer outline-none;
+	}
+
+	a {
+		@apply transition-colors duration-300;
+	}
+
+	h1,
+	h2,
+	h3 {
+		@apply scroll-mt-16 font-semibold slashed-zero tracking-tighter text-black lg:scroll-mt-8;
+	}
+
+	h1 {
+		@apply text-2xl md:text-3xl;
+	}
+
+	h2 {
+		@apply text-lg md:text-xl;
+	}
+
+	h3 {
+		@apply md:text-lg;
+	}
+
+	h2 + h3 {
+		@apply !mt-0;
+	}
+
+	ol > li::marker {
+		@apply font-semibold;
+	}
+
+	ul > li {
+		@apply pl-2;
+	}
+
+	ul > li::marker {
+		@apply text-gray-400;
+	}
+
+	/* li div {
+		@apply inline;
+	} */
+
+	li p,
+	li div,
+	li h1,
+	li h2 {
+		@apply my-0;
+	}
+
+	hr {
+		@apply my-6 border-gray-200;
+	}
+
+	img,
+	object {
+		@apply rounded-xl border;
 	}
 }
 
-[color-scheme='dark'] {
-	color-scheme: dark;
-
-	--brand: var(--brand-dark);
-	--text-1: var(--text-1-dark);
-	--text-2: var(--text-2-dark);
-	--surface-1: var(--surface-1-dark);
-	--surface-2: var(--surface-2-dark);
-	--surface-3: var(--surface-3-dark);
-	--surface-4: var(--surface-4-dark);
-	--background: var(--background-dark);
-	--border: var(--border-dark);
-}
-
-[color-scheme='light'] {
-	color-scheme: light;
-
-	--brand: var(--brand-light);
-	--text-1: var(--text-1-light);
-	--text-2: var(--text-2-light);
-	--surface-1: var(--surface-1-light);
-	--surface-2: var(--surface-2-light);
-	--surface-3: var(--surface-3-light);
-	--surface-4: var(--surface-4-light);
-	--background: var(--background-light);
-	--border: var(--border-light);
-}
-
-html,
-body {
-	height: 100%;
-}
-
-html {
-	color: var(--text-1);
-	accent-color: var(--link);
-	background-image: var(--background);
-	background-attachment: fixed;
-}
-
-img {
-	border-radius: var(--radius-3);
-}
-
-ul,
-ol {
-	list-style: none;
-	padding: 0;
-}
-
-li {
-	padding-inline-start: 0;
-	/* max-width: 100%; */
-}
-
-.surface-1 {
-	background-color: var(--surface-1);
-	color: var(--text-2);
-}
-
-.surface-2 {
-	background-color: var(--surface-2);
-	color: var(--text-2);
-}
-
-.surface-3 {
-	background-color: var(--surface-3);
-	color: var(--text-1);
-}
-
-.surface-4 {
-	background-color: var(--surface-4);
-	color: var(--text-1);
-}
-
-.prose :is(h2, h3, h4, h5, h6) {
-	margin-top: var(--size-8);
-	margin-bottom: var(--size-3);
-}
-
-.prose p:not(:is(h2, h3, h4, h5, h6) + p) {
-	margin-top: var(--size-7);
-}
-
-.prose :is(ul, ol) {
-	list-style-type: '🔘';
-	padding-left: var(--size-5);
-}
-
-.prose :is(ul, ol) li {
-	margin-block: var(--size-2);
-	padding-inline-start: var(--size-2);
-}
-
-.prose pre {
-	max-inline-size: 100%;
-	padding: var(--size-3);
-	border-radius: 8px;
-	tab-size: 2;
-}
-
-/* button {
-	color: white;
-	cursor: pointer;
-	border: none;
-	border-radius: 3pt;
-	background-color: rgb(26, 158, 185);
-	padding: 2pt 4pt;
-	font-size: 12pt;
-	line-height: initial;
-	transition: background-color 0.2s;
-  } */
-
-/*************** CODE COPY BUTTON ***************/
-
-pre:has(code) {
-	position: relative;
-	overflow-x: auto;
-}
-
-pre button.copy {
-	position: absolute;
-	right: 16px;
-	top: 16px;
-	height: 28px;
-	width: 28px;
-	padding: 0;
-	display: flex;
-
-	& span {
-		width: 100%;
-		aspect-ratio: 1 / 1;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+@layer base {
+	* {
+		@apply border-border;
 	}
-
-	& .ready {
-		background-image: url(/icons/copy.svg);
-	}
-
-	& .success {
-		display: none;
-		background-image: url(/icons/copy-success.svg);
-	}
-
-	&.copied {
-		& .success {
-			display: block;
-		}
-
-		& .ready {
-			display: none;
-		}
+	body {
+		@apply h-screen bg-background text-foreground;
 	}
 }
-/*************** CODE COPY BUTTON ***************/
+
+@layer components {
+	.content-wrapper {
+		@apply z-[1] w-full px-6 pb-8 pt-8 lg:px-8 lg:pb-16 lg:pt-24;
+	}
+
+	.content {
+		@apply mx-auto w-full lg:mb-0 lg:max-w-[52rem];
+	}
+
+	.thumbnail-shadow {
+		box-shadow:
+			0 0 0 0.5px #e2e8f0,
+			0 0 0 1px rgba(226, 232, 240, 0.5),
+			0 0 0 3px #f8fafc,
+			0 0 0 3.5px #f1f5f9,
+			0 10px 15px -3px rgb(59 130 246/5%),
+			0 4px 6px -4px rgb(59 130 246/5%);
+	}
+
+	.scrollable-area {
+		@apply h-full max-h-dynamic-screen min-h-dynamic-screen overflow-y-auto overflow-x-hidden;
+	}
+
+	.bg-dots {
+		@apply bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px];
+	}
+
+	.bg-grid {
+		@apply bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px];
+	}
+
+	.word-break-word {
+		word-break: break-word;
+	}
+
+	.gradientBg3 {
+		@apply absolute inset-0 z-0 h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)];
+	}
+}
+
+::-webkit-scrollbar {
+	@apply w-0;
+	@apply h-0;
+}
+
+::-webkit-scrollbar-track {
+	@apply hidden !bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+	@apply hidden rounded-xl !bg-border;
+}
+
+::-webkit-scrollbar-corner {
+	background: rgba(0, 0, 0, 0);
+}

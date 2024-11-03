@@ -1,40 +1,40 @@
-name: Deploy to GitHub Pages
+# name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#     branches: [main]
 
-jobs:
-  deploy:
-    permissions:
-      pages: write
-      contents: write
+# jobs:
+#   deploy:
+#     permissions:
+#       pages: write
+#       contents: write
 
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
 
-      - name: Setup bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
+#       - name: Setup bun
+#         uses: oven-sh/setup-bun@v2
+#         with:
+#           bun-version: latest
 
-      - name: Install dependencies
-        run: bun install
+#       - name: Install dependencies
+#         run: bun install
 
-      - name: build
-        env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
-          PUBLIC_URL: "https://ilkersigirci.github.io"
-        run: |
-          bun run build
+#       - name: build
+#         env:
+#           BASE_PATH: '/${{ github.event.repository.name }}'
+#           PUBLIC_URL: "https://ilkersigirci.github.io"
+#         run: |
+#           bun run build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          publish_branch: gh-pages
+#       - name: Deploy
+#         uses: peaceiris/actions-gh-pages@v4
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./build
+#           publish_branch: gh-pages
