@@ -1,12 +1,16 @@
-import { sveltekit } from '@sveltejs/kit/vite'
-import { defineConfig } from 'vitest/config'
-import pagefind from 'vite-plugin-pagefind'
-import { enhancedImages } from '@sveltejs/enhanced-img';
-
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
+// import pagefind from 'vite-plugin-pagefind';
+// import { enhancedImages } from '@sveltejs/enhanced-img';
 
 export default defineConfig({
-	plugins: [sveltekit(), pagefind(), enhancedImages()],
-	test: {
-		include: ['src/**/*.{test,spec}.{js,ts}']
-	}
-})
+	// plugins: [sveltekit(), pagefind(), enhancedImages()],
+	plugins: [sveltekit()],
+	server: {
+		fs: {
+			// Allow serving files from one level up to the project root
+			allow: ['..']
+		}
+	},
+	build: { chunkSizeWarningLimit: 1500 } // Default is 500
+});
