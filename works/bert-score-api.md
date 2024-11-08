@@ -6,7 +6,7 @@ techstack:
     - Python
     - FastAPI
     - Docker
-cover: /logo.jpg
+cover: /logos/logo.jpg
 source: 'https://github.com/ilkersigirci/bert-score-api'
 order: 2
 ---

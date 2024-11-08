@@ -3,7 +3,7 @@ title: Creating a new Blog
 description: Let's look at how to create a new Blog (Indivdual & Series)
 date: '2023-12-20'
 order: 2
-image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
+image: /fallback.jpg
 draft: false
 ---
 
@@ -106,7 +106,7 @@ date: '2023-12-20'
 tags:
   - SvelteKit
   - MDsveX
-image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
+image: /fallback.jpg
 draft: false
 ---
 ```
@@ -118,7 +118,7 @@ title: Creating a new Blog
 description: Let's look at how to create a new Blog (Indivdual & Series)
 date: '2023-12-20'
 order: 2
-image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
+image: /fallback.jpg
 draft: false
 ---
 ```
