@@ -17,7 +17,6 @@ import rehype_katex from 'rehype-katex';
 import remarkGfm from 'remark-gfm';
 import katex from 'katex';
 import { getSingletonHighlighter } from 'shiki';
-import { enhancedImages, defaultResolverFactory } from 'mdsvex-enhanced-images';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
@@ -176,14 +175,7 @@ export const mdsvexOptions = {
 		katex_inline,
 		replaceQuotes,
 		remarkGfm,
-		inlineKatexUsingInlineCode,
-		[
-			enhancedImages,
-			{
-				// resolve: defaultResolverFactory((path) => join('$img', path))
-				resolve: (path) => path
-			}
-		]
+		inlineKatexUsingInlineCode
 	],
 	rehypePlugins: [
 		rehypeUnwrapImages,

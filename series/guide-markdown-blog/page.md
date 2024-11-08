@@ -5,6 +5,6 @@ date: '2023-12-16'
 tags:
   - SvelteKit
   - MDsveX
-image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
+image: /fallback.jpg
 draft: false
 ---

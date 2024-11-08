@@ -2,7 +2,7 @@
 title: Markdown Compatibility
 description: Markdown Compatibility Description
 date: '2024-1-1'
-image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
+image: /fallback.jpg
 icon: '/posts/logo.jpg'
 useIconInHome: false
 tags:
