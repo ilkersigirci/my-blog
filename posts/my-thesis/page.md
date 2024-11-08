@@ -2,7 +2,7 @@
 title: My Thesis
 description: ON THE USE OF LARGE LANGUAGE MODEL FOR VIRTUAL SCREENING
 date: '2024-7-27'
-image: https://blog.ronin.cloud/content/images/size/w2000/2022/02/markdown.png
+image: /fallback.jpg
 # Not working on vercel
 icon: '/posts/logo.jpg'
 useIconInHome: false
@@ -23,7 +23,7 @@ draft: false
 - Our empirical findings show that using learned descriptors of ChemBERTa produces results that are comparable with traditional and graph-based models, as shown by metrics of cluster accuracy and computing runtime.
 - Keywords: drug-target interaction, compound descriptors, representation learning,
 natural language processing, clustering
-- [Thesis Pdf](../pdfs/Thesis.pdf)
+- [Thesis Pdf](/pdfs/Thesis.pdf)
 - [Github Repository](https://github.com/ilkersigirci/thesis-work)
 
 ## Method
@@ -32,4 +32,6 @@ natural language processing, clustering
 - We use 3 main compound SMILES datasets, with 3 different descriptors.
 - We also use dimensionality reduction techniques before clustering.
 - We use 4 main clustering algorithm and evaluate their performance with 3 different metrics.
-- ![Thesis.Method](/ThesisMethod.png)
+- ![Thesis.Method](/my-thesis/ThesisMethod.png)
+<!-- - [Thesis.Method](/posts/my-thesis/ThesisMethod.png) -->
+<!-- - ![Thesis.Method](./posts/my-thesis/ThesisMethod.png) -->

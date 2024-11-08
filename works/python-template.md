@@ -7,7 +7,7 @@ techstack:
     - Uv
     - Docker
     - MkDocs
-cover: /logo.jpg
+cover: /logos/logo.jpg
 source: 'https://github.com/ilkersigirci/python-template'
 order: 1
 ---
