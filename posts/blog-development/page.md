@@ -23,7 +23,7 @@ draft: false
 - Unlike other SSGs, prerendered SvelteKit still allows for client-side hydration, so I can still use smooth client-side routing and transitions.
 - Use static adapter
 - For images, use AVIF / WebP instead of PNG / jpg
-	- Use Sveltekit [enhanced:img](https://kit.svelte.dev/docs/images#sveltejs-enhanced-img-srcset-and-sizes)
+	- Use Sveltekit [enhanced:img](https://kit.svelte.dev/docs/images#sveltejs-enhanced-img-srcset-and-sizes) with Svelte 5 🎉
 - Optimize fonts by reducing their size
 	- Only import the necessary weights and subsets for each font
 	- use woff2 files

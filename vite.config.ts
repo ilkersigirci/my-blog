@@ -5,7 +5,7 @@ import { enhancedImages } from '@sveltejs/enhanced-img';
 
 export default defineConfig({
 	// plugins: [sveltekit(), pagefind(), enhancedImages()],
-	plugins: [sveltekit()],
+	plugins: [sveltekit(), enhancedImages()],
 	server: {
 		fs: {
 			// Allow serving files from one level up to the project root
