@@ -32,4 +32,6 @@ natural language processing, clustering
 - We use 3 main compound SMILES datasets, with 3 different descriptors.
 - We also use dimensionality reduction techniques before clustering.
 - We use 4 main clustering algorithm and evaluate their performance with 3 different metrics.
-- ![Thesis.Method](/posts/my-thesis/ThesisMethod.png)
+- ![Thesis.Method](/my-thesis/ThesisMethod.png)
+<!-- - [Thesis.Method](/posts/my-thesis/ThesisMethod.png) -->
+<!-- - ![Thesis.Method](./posts/my-thesis/ThesisMethod.png) -->

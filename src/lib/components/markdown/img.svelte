@@ -31,7 +31,8 @@
 				$page.url.pathname !== '/journey' ? 'lg:p-2' : 'lg:p-3'
 			)}
 		>
-			{#if !dev && (src?.startsWith('/posts') || src?.startsWith('/series'))}
+			<!-- {#if !dev && (src?.startsWith('/posts') || src?.startsWith('/series'))} -->
+			{#if !dev && !src?.startsWith('/logos')}
 				<enhanced:img
 					{src}
 					{alt}
