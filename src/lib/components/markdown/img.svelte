@@ -32,7 +32,7 @@
 			)}
 		>
 			<!-- {#if !dev && (src?.startsWith('/posts') || src?.startsWith('/series'))} -->
-			{#if !dev && !src?.startsWith('/logos')}
+			{#if !dev && src?.startsWith('/dummy')}
 				<enhanced:img
 					{src}
 					{alt}
