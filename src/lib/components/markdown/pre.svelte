@@ -109,3 +109,9 @@
 		{@render children()}
     </pre>
 </div>
+
+<style>
+	* {
+		scrollbar-width: none;
+	}
+</style>
