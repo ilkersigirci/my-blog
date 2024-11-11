@@ -4,7 +4,6 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
 import { mdsvex, escapeSvelte } from 'mdsvex'
 import { getSingletonHighlighter } from 'shiki'
-import remarkUnwrapImages from 'remark-unwrap-images'
 import { addCopyButton } from 'shiki-transformer-copy-button'
 import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
@@ -46,7 +45,6 @@ const mdsvexOptions = {
 				resolve: defaultResolverFactory((path) => join('$img', path))
 			}
 		],
-		remarkUnwrapImages,
 		[remarkToc, { tight: true }]
 	],
 	rehypePlugins: [rehypeSlug]
