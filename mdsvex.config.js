@@ -16,7 +16,8 @@ import math from 'remark-math';
 import rehype_katex from 'rehype-katex';
 import remarkGfm from 'remark-gfm';
 import katex from 'katex';
-import { getSingletonHighlighter } from 'shiki';
+import remarkToc from 'remark-toc';
+import { createHighlighter } from 'shiki';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
@@ -111,12 +112,12 @@ const prettyCodeOptions = {
 		dark: JSON.parse(
 			readFileSync(resolve(__dirname, './src/lib/styles/themes/tokyo-night-storm.json'), 'utf-8')
 		),
+		light: 'min-light'
 		// for light, class name will be min-light, use that class name in pre.svelte to adjust
 		// any changes here, you need to change in pre.svelte as well with the same class name
 		// light: JSON.parse(
 		// 	readFileSync(resolve(__dirname, './src/lib/styles/themes/tokyo-night-light.json'), 'utf-8')
 		// )
-		light: 'min-light'
 	},
 	keepBackground: false, // to use our own background color
 	onVisitLine(node) {
@@ -128,7 +129,7 @@ const prettyCodeOptions = {
 	// 	// console.log('title:', node);
 	// },
 	getHighlighter: (options) => {
-		return getSingletonHighlighter({
+		return createHighlighter({
 			...options,
 			langs: [
 				'bash',
@@ -175,7 +176,8 @@ export const mdsvexOptions = {
 		katex_inline,
 		replaceQuotes,
 		remarkGfm,
-		inlineKatexUsingInlineCode
+		inlineKatexUsingInlineCode,
+		[remarkToc, { tight: true }]
 	],
 	rehypePlugins: [
 		rehypeUnwrapImages,
