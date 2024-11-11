@@ -30,6 +30,7 @@
 		"prettier-plugin-svelte": "^3.2.7",
 		"prettier-plugin-tailwindcss": "^0.6.8",
 		"rehype-unwrap-images": "^1.0.0",
+		"remark-toc": "^9.0.0",
 		"svelte": "5.1.12",
 		"svelte-check": "^4.0.6",
 		"tailwindcss": "^3.4.14",
