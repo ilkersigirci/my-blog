@@ -14,7 +14,7 @@
 	<div class="content-wrapper relative flex w-full flex-col">
 		<div class="content">
 			<PageTitle title="Home" class="lg:hidden" />
-			<p>I'm Ilker SIGIRCI, an Machine Learning Engineer based in Ankara, Turkey.</p>
+			<p>I'm Ilker SIGIRCI, a Machine Learning Engineer based in Ankara, Turkey.</p>
 			<p>
 				Working as a {work.role} at {work.company}. I'm passionate about learning the connection
 				between human and artificial brain. Also, I deploy several self-hosted services as my hobby.
