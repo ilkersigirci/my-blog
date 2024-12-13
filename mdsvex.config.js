@@ -177,7 +177,7 @@ export const mdsvexOptions = {
 		replaceQuotes,
 		remarkGfm,
 		inlineKatexUsingInlineCode,
-		[remarkToc, { tight: true }]
+		[remarkToc, { tight: true, maxDepth: 3 }]
 	],
 	rehypePlugins: [
 		rehypeUnwrapImages,
