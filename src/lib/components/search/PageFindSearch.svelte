@@ -46,7 +46,7 @@
 	<title>Search {title}</title>
 </svelte:head>
 
-<div id="search" class="custom_pagefind_search" />
+<div id="search" class="custom_pagefind_search"></div>
 
 <style>
 	:root {

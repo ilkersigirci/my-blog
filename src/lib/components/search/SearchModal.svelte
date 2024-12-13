@@ -14,10 +14,16 @@
 	}
 </script>
 
-<div class="modal-backdrop" on:click={closeModal}>
-	<div class="modal-content" on:click|stopPropagation>
+<div
+	class="modal-backdrop"
+	role="button"
+	tabindex="0"
+	onclick={closeModal}
+	onkeydown={(e) => e.key === 'Enter' && closeModal()}
+>
+	<button class="modal-content" tabindex="0">
 		<PageFindSearch />
-	</div>
+	</button>
 </div>
 
 <style>

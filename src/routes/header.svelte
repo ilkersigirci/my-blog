@@ -59,45 +59,25 @@
 <style>
 	nav {
 		padding-block: var(--size-7);
-	}
 
-	.links {
-		margin-block: var(--size-7);
-	}
-
-	a {
-		color: inherit;
-		text-decoration: none;
-	}
-
-	@media (min-width: 768px) {
-		nav {
+		@media (min-width: 768px) {
 			display: flex;
 			justify-content: space-between;
 		}
 
 		.links {
-			display: flex;
-			gap: var(--size-7);
-			margin-block: 0;
+			margin-block: var(--size-7);
+
+			@media (min-width: 768px) {
+				display: flex;
+				gap: var(--size-7);
+				margin-block: 0;
+			}
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
 		}
 	}
-
-	/* .modal {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0, 0, 0, 0.5);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.modal > :global(.custom_pagefind_search) {
-		background: white;
-		padding: var(--size-7);
-		border-radius: var(--pagefind-ui-border-radius);
-	} */
 </style>
