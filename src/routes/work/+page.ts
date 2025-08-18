@@ -26,15 +26,11 @@ function extractModulesWithFilename(modules: Record<string, Module>): ModuleWith
 
 	return result;
 }
-export const load = async ({ url }) => {
+export const load = async () => {
 	const data: Record<string, Module> = import.meta.glob('/works/*.md', { eager: true });
 	const modules = extractModulesWithFilename(data);
-	const sortedWorks = sortModulesByOrder(modules);
-
-	const initialWork = url.searchParams.get('work');
 
 	return {
-		works: sortedWorks,
-		initialWork
+		works: sortModulesByOrder(modules)
 	};
 };
