@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import { langIcons } from '$lib/components/markdown/icons';
 	import Image from '$lib/components/markdown/img.svelte';
 	import { WorkList } from '$lib/components/site';
@@ -7,22 +8,26 @@
 	import type { ModuleWithFilename } from '$lib/types';
 	import { Globe } from 'lucide-svelte';
 	import Github from 'lucide-svelte/icons/github';
-	import { goto } from '$app/navigation';
 
 	let { data } = $props();
 
 	headerTitle.value = 'Work';
 
-	let selectedWork: string = $state(data.initialWork || '');
-	let currentWork: ModuleWithFilename | undefined = $state(
-		data.initialWork ? data.works.find((w) => w.filename === data.initialWork) : undefined
-	);
+	let selectedWork: string = $state('');
+	let currentWork: ModuleWithFilename | undefined = $state(undefined);
 	let showDrawer = $state(false);
 	let isDesktop = $state(false);
+
+	let selectedWorkFromURL: string | null = $state(null);
 
 	const updateScreenSize = () => {
 		isDesktop = window.innerWidth >= 1024;
 	};
+
+	$effect(() => {
+		selectedWorkFromURL = page.url.searchParams.get('work');
+		selectedWork = selectedWorkFromURL || '';
+	});
 
 	$effect(() => {
 		showDrawer = (selectedWork !== '' || currentWork !== undefined) && !isDesktop;
@@ -32,18 +37,6 @@
 		updateScreenSize();
 		window.addEventListener('resize', updateScreenSize);
 		return () => window.removeEventListener('resize', updateScreenSize);
-	});
-
-	$effect(() => {
-		if (selectedWork) {
-			goto(`/work?work=${selectedWork}`, {
-				keepFocus: true
-			});
-		} else {
-			goto('/work', {
-				keepFocus: true
-			});
-		}
 	});
 </script>
 
