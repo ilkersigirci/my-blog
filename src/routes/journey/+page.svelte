@@ -25,12 +25,12 @@
 				<div class="flex flex-col items-stretch gap-12">
 					{#each data.years as year, itemIndex}
 						{@const item = data.journeyByYear[year]}
-						<div class="flex flex-col items-baseline gap-6 md:flex-row md:gap-12">
-							<div class="flex items-center">
+						<div class="flex flex-col items-start gap-6 md:flex-row md:items-start md:gap-12">
+							<div class="flex items-center md:w-20 md:shrink-0">
 								<h2>{year}</h2>
-								<hr class="my-0 ml-4 flex-1 border-dashed border-gray-200" />
+								<hr class="my-0 ml-4 flex-1 border-dashed border-gray-200 md:hidden" />
 							</div>
-							<section>
+							<section class="flex-1">
 								{#each item as journey, logIndex}
 									{@const Content = journey.default}
 									<div
@@ -52,7 +52,7 @@
 										</div>
 										<div class="grow pl-8">
 											<div class="word-break-word -mt-0.5 flex flex-col">
-												<div class="flex items-center justify-between">
+												<div class="flex items-start justify-between">
 													<div class="flex flex-col">
 														<span class="text-lg font-semibold tracking-tight"
 															>{journey.metadata.title}</span
@@ -67,7 +67,7 @@
 														{/if}
 													</div>
 													{#if journey.metadata.image}
-														<div class="size-10 rounded-xl bg-slate-200 p-1 shadow-xl">
+														<div class="size-10 shrink-0 rounded-xl bg-slate-200 p-1 shadow-xl">
 															<img
 																class="rounded-lg border-none"
 																src={journey.metadata.image?.startsWith('./')
