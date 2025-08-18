@@ -4,7 +4,6 @@ description: Understanding the optimizations and technologies used in building t
 date: '2024-7-26'
 image: /fallback.jpg
 icon: '/posts/logo.jpg'
-# Not working on vercel
 useIconInHome: false
 tags:
   - SvelteKit

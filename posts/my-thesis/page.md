@@ -3,7 +3,6 @@ title: My Thesis
 description: ON THE USE OF LARGE LANGUAGE MODEL FOR VIRTUAL SCREENING
 date: '2024-7-27'
 image: /fallback.jpg
-# Not working on vercel
 icon: '/posts/logo.jpg'
 useIconInHome: false
 tags:
