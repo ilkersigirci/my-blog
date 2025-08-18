@@ -1,8 +1,6 @@
 import { getSeriesPostByCoverFolder } from '$lib/posts';
 import { error } from '@sveltejs/kit';
 
-export const prerender = false;
-
 export const load = async ({ params }) => {
 	let post;
 

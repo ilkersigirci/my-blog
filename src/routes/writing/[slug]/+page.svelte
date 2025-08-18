@@ -14,32 +14,14 @@
 <svelte:head>
 	<title>{meta.title}</title>
 	<meta property="description" content={meta.description} />
-	{#if !data.seriesPost}
-		<meta
-			property="og:image"
-			content={`${$page.url.origin}/writing/social.png?title=${meta.title}`}
-		/>
-	{:else}
-		<meta
-			property="og:image"
-			content={`${$page.url.origin}/writing/social.png?title=${meta.title}&isSeries=true&currentPart=${data.seriesPost?.subPosts.find((post) => post.title === meta.title)?.order}&CoverFolderName=${data.seriesPost.title}&totalParts=${data.seriesPost.subPosts.length}`}
-		/>
-	{/if}
+	<meta property="og:image" content={`${$page.url.origin}/fallback.jpg`} />
 	<meta property="og:description" content={meta.description} />
 	<meta property="og:title" content={meta.title} />
-	{#if !data.seriesPost}
-		<meta
-			name="twitter:image"
-			property="twitter:image"
-			content={`${$page.url.origin}/writing/social.png?title=${meta.title}`}
-		/>
-	{:else}
-		<meta
-			name="twitter:image"
-			property="twitter:image"
-			content={`${$page.url.origin}/writing/social.png?title=${meta.title}&isSeries=true&currentPart=${data.seriesPost?.subPosts.find((post) => post.title === meta.title)?.order}&CoverFolderName=${data.seriesPost.title}&totalParts=${data.seriesPost.subPosts.length}`}
-		/>
-	{/if}
+	<meta
+		name="twitter:image"
+		property="twitter:image"
+		content={`${$page.url.origin}/fallback.jpg`}
+	/>
 	<meta property="og:url" content={$page.url.href} />
 	<meta name="twitter:card" property="twitter:card" content="summary_large_image" />
 	<meta name="twitter:image:alt" property="twitter:title" content={meta.title} />
