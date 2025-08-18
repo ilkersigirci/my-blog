@@ -6,13 +6,11 @@
 		{
 			title: 'Home',
 			description: 'Machine Learning Engineer',
-			image:
-				'https://blog.ilkerflix.com/social.png?title=Ilker SIGIRCI&description=Machine Learning Engineer',
+			image: 'https://blog.ilkerflix.com/fallback.jpg',
 			url: 'https://blog.ilkerflix.com/',
 			twitter: {
 				cardType: 'summary_large_image',
-				image:
-					'https://blog.ilkerflix.com/social.png?title=Ilker SIGIRCI&description=Machine Learning Engineer',
+				image: 'https://blog.ilkerflix.com/fallback.jpg',
 				imageAlt: 'Ilker SIGIRCI',
 				site: '@ilkersigirci',
 				creator: '@ilkersigirci',
@@ -22,13 +20,11 @@
 		{
 			title: 'Writing',
 			description: 'Learnings, thoughts and ideas.',
-			image:
-				'https://blog.ilkerflix.com/social.png?title=Writing&description=Learnings, thoughts and ideas.',
+			image: 'https://blog.ilkerflix.com/fallback.jpg',
 			url: 'https://blog.ilkerflix.com/writing',
 			twitter: {
 				cardType: 'summary_large_image',
-				image:
-					'https://blog.ilkerflix.com/social.png?title=Writing&description=Learnings, thoughts and ideas.',
+				image: 'https://blog.ilkerflix.com/fallback.jpg',
 				imageAlt: 'Writing',
 				site: '@ilkersigirci',
 				creator: '@ilkersigirci',
@@ -38,13 +34,11 @@
 		{
 			title: 'Journey',
 			description: 'My journey through the years',
-			image:
-				'https://blog.ilkerflix.com/social.png?title=Journey&description=My journey through the years',
+			image: 'https://blog.ilkerflix.com/fallback.jpg',
 			url: 'https://blog.ilkerflix.com/journey',
 			twitter: {
 				cardType: 'summary_large_image',
-				image:
-					'https://blog.ilkerflix.com/social.png?title=Journey&description=My journey through the years',
+				image: 'https://blog.ilkerflix.com/fallback.jpg',
 				imageAlt: 'Journey',
 				site: '@ilkersigirci',
 				creator: '@ilkersigirci',
@@ -54,12 +48,11 @@
 		{
 			title: 'Work',
 			description: 'A collection of my work',
-			image: 'https://blog.ilkerflix.com/social.png?title=Work&description=A collection of my work',
+			image: 'https://blog.ilkerflix.com/fallback.jpg',
 			url: 'https://blog.ilkerflix.com/work',
 			twitter: {
 				cardType: 'summary_large_image',
-				image:
-					'https://blog.ilkerflix.com/social.png?title=Work&description=A collection of my work',
+				image: 'https://blog.ilkerflix.com/fallback.jpg',
 				imageAlt: 'Work',
 				site: '@ilkersigirci',
 				creator: '@ilkersigirci',
@@ -96,7 +89,6 @@
 		siteName: 'Ilker SIGIRCI'
 	}}
 	twitter={{
-		handle: currentMeta.twitter?.handle || '@handle',
 		site: currentMeta.twitter?.site || '@site',
 		cardType: currentMeta.twitter?.cardType || 'summary_large_image',
 		title: `${currentMeta.twitter?.title || currentMeta.title} | Ilker SIGIRCI`,
