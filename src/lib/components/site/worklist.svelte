@@ -29,7 +29,7 @@
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div
 			class={cn(
-				'active:bg-gra-200 flex flex-col gap-1 rounded-lg p-2 transition-colors duration-300 hover:cursor-pointer [&>*]:transition-colors [&>*]:duration-300',
+				'active:bg-gra-200 flex flex-col gap-1 rounded-lg p-2 transition-colors duration-300 hover:cursor-pointer *:transition-colors *:duration-300',
 				isActive ? 'lg:bg-black' : 'lg:hover:bg-gray-200'
 			)}
 			onclick={() => {

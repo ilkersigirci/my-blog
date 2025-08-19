@@ -1,3 +1,5 @@
+@reference "../../../app.css";
+
 [data-theme] {
 	display: flex;
 	flex-direction: column;
@@ -56,7 +58,7 @@ code:not(code[data-language]) {
 }
 
 [data-metadata] [data-code-copy] {
-	@apply top-16 !important;
+	@apply !top-16;
 }
 
 .mdsvex .code-add {
@@ -137,19 +139,19 @@ code:not(code[data-language]) {
 }
 
 [data-chars-id='ul'] {
-	@apply border-b border-b-green-500 font-bold !important;
+	@apply !border-b !border-b-green-500 !font-bold;
 }
 
 [data-chars-id='hi'] {
-	@apply rounded bg-teal-700/60 p-1 font-bold !important;
+	@apply !rounded !bg-teal-700/60 !p-1 !font-bold;
 }
 
 [data-chars-id='rb'] {
-	@apply rounded border border-red-600 p-[2px] font-bold !important;
+	@apply !rounded !border !border-red-600 !p-[2px] !font-bold;
 }
 
 [data-chars-id='yb'] {
-	@apply rounded border border-yellow-600 p-[2px] font-bold !important;
+	@apply !rounded !border !border-yellow-600 !p-[2px] !font-bold;
 }
 
 /* [data-rehype-pretty-code-title] {
@@ -165,7 +167,7 @@ code:not(code[data-language]) {
 }
 
 /* [data-callout] > p:last-child {
-	@apply mb-0 !important;
+	@apply !mb-0;
 }
 
 [data-comp-preview] + p {

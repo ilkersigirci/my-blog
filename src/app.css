@@ -1,40 +1,52 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer base {
-	:root {
-		--background: 0 0% 100%;
-		--foreground: 240 10% 3.9%;
+@theme {
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --radius: 0.5rem;
+  --color-border: hsl(240 5.9% 90%);
+  --color-input: hsl(240 5.9% 90%);
+  --color-ring: hsl(240 10% 3.9%);
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(240 10% 3.9%);
+  --color-primary: hsl(240 5.9% 10%);
+  --color-primary-foreground: hsl(0 0% 98%);
+  --color-secondary: hsl(240 4.8% 95.9%);
+  --color-secondary-foreground: hsl(240 5.9% 10%);
+  --color-destructive: hsl(0 72.2% 50.6%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+  --color-muted: hsl(240 4.8% 95.9%);
+  --color-muted-foreground: hsl(240 3.8% 46.1%);
+  --color-accent: hsl(240 4.8% 95.9%);
+  --color-accent-foreground: hsl(240 5.9% 10%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(240 10% 3.9%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(240 10% 3.9%);
+  --animate-reveal: reveal 0.7s ease-in-out;
+  --line-height-slacker: 1.75;
+  --height-dynamic-screen: 100dvh;
+  --min-height-dynamic-screen: 100dvh;
+  --max-height-dynamic-screen: 100dvh;
+  --breakpoint-xs: 390px;
+  --breakpoint-sm: 435px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1400px;
+  --breakpoint-3xl: 1600px;
+}
 
-		--muted: 240 4.8% 95.9%;
-		--muted-foreground: 240 3.8% 46.1%;
+@utility slashed-zero {
+  font-variant-numeric: slashed-zero;
+}
 
-		--popover: 0 0% 100%;
-		--popover-foreground: 240 10% 3.9%;
-
-		--card: 0 0% 100%;
-		--card-foreground: 240 10% 3.9%;
-
-		--border: 240 5.9% 90%;
-		--input: 240 5.9% 90%;
-
-		--primary: 240 5.9% 10%;
-		--primary-foreground: 0 0% 98%;
-
-		--secondary: 240 4.8% 95.9%;
-		--secondary-foreground: 240 5.9% 10%;
-
-		--accent: 240 4.8% 95.9%;
-		--accent-foreground: 240 5.9% 10%;
-
-		--destructive: 0 72.2% 50.6%;
-		--destructive-foreground: 0 0% 98%;
-
-		--ring: 240 10% 3.9%;
-
-		--radius: 0.5rem;
-	}
+@keyframes reveal {
+	0% { opacity: 0; filter: brightness(1) blur(15px); scale: 1.0125; }
+	10% { opacity: 1; filter: brightness(1.25) blur(10px); }
+	100% { opacity: 1; filter: brightness(1) blur(0); scale: 1; }
+}
 
 	/* .dark {
 		--background: 240 10% 3.9%;
@@ -90,7 +102,8 @@
 	}
 
 	p {
-		@apply mb-6 leading-slacker;
+		@apply mb-6;
+		line-height: var(--line-height-slacker);
 	}
 
 	a,
@@ -155,7 +168,6 @@
 	object {
 		@apply rounded-xl border;
 	}
-}
 
 @layer base {
 	* {
@@ -168,11 +180,11 @@
 
 @layer components {
 	.content-wrapper {
-		@apply z-[1] w-full px-6 pb-8 pt-8 lg:px-8 lg:pb-16 lg:pt-24;
+		@apply z-1 w-full px-6 pb-8 pt-8 lg:px-8 lg:pb-16 lg:pt-24;
 	}
 
 	.content {
-		@apply mx-auto w-full lg:mb-0 lg:max-w-[52rem];
+		@apply mx-auto w-full lg:mb-0 lg:max-w-208;
 	}
 
 	.thumbnail-shadow {
@@ -190,11 +202,11 @@
 	}
 
 	.bg-dots {
-		@apply bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px];
+		@apply bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] bg-size-[16px_16px];
 	}
 
 	.bg-grid {
-		@apply bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px];
+		@apply bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px];
 	}
 
 	.word-break-word {
