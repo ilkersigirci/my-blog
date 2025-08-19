@@ -1,7 +1,7 @@
-<script context="module">
+<script module>
 	const images_base_path = '/src/assets/images'
 
-	// From: https://github.com/sveltejs/kit/issues/11535#issuecomment-2207645048
+	
 	const images = import.meta.glob(['/src/assets/images/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}'], {
 		eager: true,
 		query: { enhanced: true }
@@ -14,8 +14,13 @@
 </script>
 
 <script lang="ts">
-	export let src: string
-	export let alt: string
+	interface Props {
+		// From: https://github.com/sveltejs/kit/issues/11535#issuecomment-2207645048
+		src: string;
+		alt: string;
+	}
+
+	let { src, alt }: Props = $props();
 
 	const image = get_full(src)
 </script>

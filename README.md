@@ -11,7 +11,6 @@ bun i
 
 #start the dev server
 bun run dev
-
 ```
 
 ### Build
@@ -28,6 +27,16 @@ vite build && pagefind
 
 ## Without pagefind in package.json
 vite build
+```
+
+### Upgrade Packages
+
+```bash
+# Upgrade all packages using ranges
+bun update
+
+# Upgrade all packages to their latest versions
+bun update --latest
 ```
 
 ## TODO

@@ -131,7 +131,6 @@ for series blogs, the slug will be `cover folder` + `a unique identifier` + `nam
 
 This blog uses [rehype-pretty-code](https://rehype-pretty-code.netlify.app/) and [shiki](https://shiki.matsu.io/) for syntax highlighting with two different themes for light and dark mode. To configure code blocks to your style, take a look at `mdsvex.config.js`, `pre.svelte` and `markdown.postcss` files.
 
-You can create fenced code blocks by placing triple backticks <code>```</code> before and after the code block. Place a blank line before and after code blocks to make the raw formatting easier to read.
 
 ```js
 console.log("Hello")

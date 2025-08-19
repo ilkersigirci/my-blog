@@ -16,7 +16,9 @@
 </div>
 
 <style lang="postcss">
+	@reference "../../../app.css";
+
 	.scrollable-area {
-		@apply h-full max-h-dynamic-screen min-h-dynamic-screen overflow-y-auto overflow-x-hidden;
+		@apply max-h-dynamic-screen min-h-dynamic-screen h-full overflow-x-hidden overflow-y-auto;
 	}
 </style>

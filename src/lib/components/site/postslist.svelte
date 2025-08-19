@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import * as Accordion from '$lib/components/ui/accordion';
 	import * as Tabs from '$lib/components/ui/tabs';
 	import { seriesPostCoverFolder } from '$lib/stores.svelte';
@@ -24,7 +24,7 @@
 	// if series
 
 	const pattern: RegExp = /-spn\d+-/; // -spn{order}- is the pattern for series post
-	let seriesSlug = $derived($page.url.pathname.split('/').pop() || '');
+	let seriesSlug = $derived(page.url.pathname.split('/').pop() || '');
 
 	let isSeriesPost = $derived(pattern.test(seriesSlug));
 
@@ -70,14 +70,14 @@
 		<Tabs.Content value="posts" class="-mx-2 -mt-1">
 			<div class="scrollable-area flex flex-col gap-1 p-2">
 				{#each posts as post}
-					{@const isActive = $page.url.pathname === `/writing/${post.slug}`}
+					{@const isActive = page.url.pathname === `/writing/${post.slug}`}
 					<a
 						href={`/writing/${post.slug}`}
 						onclick={() => {
 							seriesPostCoverFolder.value = '';
 						}}
 						class={cn(
-							'[&>*] :duration-300 relative flex flex-col gap-1 rounded-lg p-2 transition-colors duration-300 [&>*]:transition-colors',
+							'[&>*] :duration-300 relative flex flex-col gap-1 rounded-lg p-2 transition-colors duration-300 *:transition-colors',
 							isActive ? 'bg-black' : 'hover:bg-gray-200'
 						)}
 					>
@@ -96,7 +96,7 @@
 						<Accordion.Item value={seriesPost.coverFolder} class="border-none">
 							<Accordion.Trigger
 								class={cn(
-									'rounded-lg py-0 transition-colors duration-300 hover:bg-gray-200 [&>*]:transition-colors [&>*]:duration-300',
+									'rounded-lg py-0 transition-colors duration-300 hover:bg-gray-200 *:transition-colors *:duration-300',
 									activeSeriesPost?.coverFolder === seriesPost.coverFolder
 										? 'bg-gray-200'
 										: seriesPostCoverFolder.value === seriesPost.coverFolder
@@ -109,7 +109,7 @@
 							>
 								<span
 									class={cn(
-										'flex w-full flex-col items-start gap-1 rounded-lg p-2 transition-colors duration-300 [&>*]:transition-colors [&>*]:duration-300'
+										'flex w-full flex-col items-start gap-1 rounded-lg p-2 transition-colors duration-300 *:transition-colors *:duration-300'
 									)}
 								>
 									<a class={cn('font-medium underline-offset-4 hover:underline')} href="/writing"
@@ -122,11 +122,11 @@
 							</Accordion.Trigger>
 							<Accordion.Content class="mt-1 flex flex-col gap-1">
 								{#each seriesPost.subPosts as subPost}
-									{@const isActive = $page.url.pathname === `/writing/${subPost.slug}`}
+									{@const isActive = page.url.pathname === `/writing/${subPost.slug}`}
 									<a
 										href={`/writing/${subPost.slug}`}
 										class={cn(
-											'mb-1 flex flex-col gap-1 rounded-lg p-2 transition-colors duration-300 [&>*]:transition-colors [&>*]:duration-300',
+											'mb-1 flex flex-col gap-1 rounded-lg p-2 transition-colors duration-300 *:transition-colors *:duration-300',
 											isActive ? 'bg-black' : 'hover:bg-gray-200'
 										)}
 									>

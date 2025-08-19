@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { PageTitle } from '$lib/components/site';
 	import { headerTitle } from '$lib/stores.svelte';
 	import { formatDate } from '$lib/utils.js';
@@ -14,15 +14,15 @@
 <svelte:head>
 	<title>{meta.title}</title>
 	<meta property="description" content={meta.description} />
-	<meta property="og:image" content={`${$page.url.origin}/fallback.jpg`} />
+	<meta property="og:image" content={`${page.url.origin}/fallback.jpg`} />
 	<meta property="og:description" content={meta.description} />
 	<meta property="og:title" content={meta.title} />
 	<meta
 		name="twitter:image"
 		property="twitter:image"
-		content={`${$page.url.origin}/fallback.jpg`}
+		content={`${page.url.origin}/fallback.jpg`}
 	/>
-	<meta property="og:url" content={$page.url.href} />
+	<meta property="og:url" content={page.url.href} />
 	<meta name="twitter:card" property="twitter:card" content="summary_large_image" />
 	<meta name="twitter:image:alt" property="twitter:title" content={meta.title} />
 	<meta name="twitter:title" property="twitter:title" content={meta.title} />
@@ -30,7 +30,7 @@
 </svelte:head>
 
 <div class="scrollable-area bg-white">
-	<div class="content-wrapper mx-auto w-screen lg:max-w-[30rem] xl:max-w-[40rem] 2xl:max-w-[52rem]">
+	<div class="content-wrapper mx-auto w-screen lg:max-w-120 xl:max-w-160 2xl:max-w-208">
 		<div class="content mb-24">
 			<PageTitle title={meta.title} subtitle={formatDate(meta.date)} />
 			<div class="mdsvex" id="mdsvex">

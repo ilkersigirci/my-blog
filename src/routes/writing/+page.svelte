@@ -39,7 +39,9 @@
 </div>
 
 <style lang="postcss">
+	@reference "../../app.css";
+
 	.scrollable-area__ {
-		@apply h-full max-h-[70dvh] min-h-[40dvh] overflow-y-auto overflow-x-hidden;
+		@apply h-full max-h-[70dvh] min-h-[40dvh] overflow-x-hidden overflow-y-auto;
 	}
 </style>

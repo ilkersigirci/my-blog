@@ -61,13 +61,13 @@
 		{/if}
 
 		{#if !post.useIconInHome}
-			<span class="aspect-[1200/630] overflow-hidden rounded-lg">
+			<span class="aspect-1200/630 overflow-hidden rounded-lg">
 				<img
 					alt="title"
 					src={image || '/fallback.jpg'}
 					width={1200}
 					height={630}
-					class="aspect-[1200/630] animate-reveal rounded-lg border bg-cover bg-center bg-no-repeat object-cover"
+					class="aspect-1200/630 animate-reveal rounded-lg border bg-cover bg-center bg-no-repeat object-cover"
 					onerror={(e) => {
 						const target = e.target;
 						if (target instanceof HTMLImageElement) {

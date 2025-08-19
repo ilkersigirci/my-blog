@@ -36,6 +36,14 @@
 
 <style lang="postcss">
 	.blog-cards {
-		@apply -mx-4 md:mx-0;
+		margin-left: -1rem;
+		margin-right: -1rem;
+	}
+
+	@media (min-width: 768px) {
+		.blog-cards {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 </style>
