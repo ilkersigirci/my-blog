@@ -224,7 +224,7 @@
 }
 
 ::-webkit-scrollbar-track {
-	@apply hidden bg-transparent!;
+	@apply hidden !bg-transparent;
 }
 ::-webkit-scrollbar-thumb {
 	@apply hidden rounded-xl bg-border!;
