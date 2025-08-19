@@ -227,7 +227,7 @@
 	@apply hidden !bg-transparent;
 }
 ::-webkit-scrollbar-thumb {
-	@apply hidden rounded-xl bg-border!;
+	@apply hidden rounded-xl !bg-border;
 }
 
 ::-webkit-scrollbar-corner {
