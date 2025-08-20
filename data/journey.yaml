@@ -6,10 +6,10 @@
       icon: "website"
 
     - title: "Promoted to Senior Machine Learning Engineer"
-      description: "I have been promoted to Senior Machine Learning Engineer at my current company"
+      description: "I have been promoted to Senior Machine Learning Engineer at Databoss"
       date: "January"
       icon: "work"
-      company: "Current Company"
+      company: "Databoss"
 
 
 
@@ -41,11 +41,11 @@
 
 - year: 2020
   milestones:
-    - title: "Started working at HAVELSAN"
-      description: "I have started as Software Engineer at HAVELSAN Simulation Department"
+    - title: "Started working at Havelsan"
+      description: "I have started as Software Engineer at Havelsan Simulation Department"
       date: "October"
       icon: "work"
-      company: "HAVELSAN"
+      company: "Havelsan"
     
     - title: "Achieved first place at the CENG Demo Day"
       description: "Our project, PosePhys, was awarded first place in the METU CENG Senior Project Competition. Human Pose Estimation for Physiotherapy."
