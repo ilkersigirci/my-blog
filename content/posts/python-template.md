@@ -1,7 +1,7 @@
 ---
 title: "Python Template"
 description: "My Custom Python Template for Developing Python Applications Easily"
-date: 2024-08-20T22:30:00+08:00
+date: 2024-08-20
 draft: false
 tags:
   - "python"

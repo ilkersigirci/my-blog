@@ -1,6 +1,7 @@
 ---
 title: "My First Post"
-date: 2019-06-13
+description: "First Blog Post Description"
+date: 2024-04-01
 draft: false
 categories: 
   - "Blog"

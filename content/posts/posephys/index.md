@@ -2,7 +2,7 @@
 title: "PosePhys"
 description: "Human Pose Estimation for Physiotherapy"
 summary: "Our project, PosePhys, was awarded first place in the METU CENG Senior Project Competition."
-date: 2020-06-20T22:30:00+08:00
+date: 2024-04-20
 draft: false
 tags:
   - "pose-estimation"

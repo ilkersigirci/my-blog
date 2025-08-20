@@ -1,7 +1,7 @@
 ---
 title: "My Thesis"
 description: "ON THE USE OF LARGE LANGUAGE MODEL FOR VIRTUAL SCREENING"
-date: 2024-07-27T22:30:00+08:00
+date: 2024-07-27
 draft: false
 tags: 
   - "thesis"
