@@ -12,10 +12,7 @@ lightbox:
   enabled: true
 ---
 
-{{< link title="Github" description="Thesis Github Repo" url="https://github.com/ilkersigirci/thesis-work" icon="https://github.com/fluidicon.png" >}}
-
-
-[Thesis Pdf](pdfs/Thesis.pdf)
+{{< link group="my-thesis" >}}
 
 ## Introduction
 

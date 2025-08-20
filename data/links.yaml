@@ -1,0 +1,8 @@
+my-thesis:
+  - title: "Github"
+    description: "Thesis Github Repo"
+    url: "https://github.com/ilkersigirci/thesis-work"
+    icon: "https://github.com/fluidicon.png"
+  - title: "Thesis"
+    description: "PDF"
+    url: "pdfs/Thesis.pdf"
