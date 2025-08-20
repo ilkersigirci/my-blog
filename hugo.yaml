@@ -58,25 +58,20 @@ menus:
 
 
   # footer menu
-  footer:
-    - name: About
-      pageRef: /about
-      weight: 10
-      params:
-        icon: about
-#    - name: Contact
-#      url: https://google.com
-#      weight: 20
-#      params:
-#        icon: contact
-    - name: RSS Feed
-      url: /index.xml
-      weight: 30
-      params:
-        icon: rss
+  # footer:
+  #   - name: About
+  #     pageRef: /about
+  #     weight: 10
+  #     params:
+  #       icon: about
+  #   - name: RSS Feed
+  #     url: /index.xml
+  #     weight: 30
+  #     params:
+  #       icon: rss
 
   # footer social link
-  #social:
+  social:
   #  - name: GitHub
   #    url: https://github.com/ilkersigirci
   #    weight: 10
@@ -92,6 +87,11 @@ menus:
   #    weight: 40
   #    params:
   #      icon: email
+  - name: RSS Feed
+    url: /index.xml
+    weight: 10
+    params:
+      icon: rss
 
 params:
   # Basic site info with SEO
