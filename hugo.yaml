@@ -239,7 +239,7 @@ params:
 
 
   analytics:
-    enabled: false
+    enabled: true
     baidu:
       enabled: false
       id: "your-baidu-analytics-id"
@@ -254,6 +254,11 @@ params:
       id: "your-umami-website-id"
       src: "https://umami.com/myscript.js"
       domains: "example.domain.com"
+    rybbit:
+      enabled: true
+      src: "https://analytics.ilkerflix.com/api/script.js"
+      siteId: "1"
+      sessionReplay: "true"
 
 
   katex:
