@@ -2,7 +2,7 @@
 title: "PosePhys"
 description: "Human Pose Estimation for Physiotherapy"
 summary: "Our project, PosePhys, was awarded first place in the METU CENG Senior Project Competition."
-date: 2020-06-20T22:30:00+08:00
+date: 2024-04-20
 draft: false
 tags:
   - "pose-estimation"
@@ -35,7 +35,6 @@ Since all of the heavy computations are done on the client side(on the browser) 
 ## Team
 
 - [Emre Akbaş](https://user.ceng.metu.edu.tr/~emre/) - **Supervisor**
-
 - [Bedirhan Uğuz](https://www.linkedin.com/in/bedirhan-uguz/) - Developer
 - [Gürkan Kısaoğlu](https://www.linkedin.com/in/gkisaoglu/) - Developer
 - [Özhan Suat](https://www.linkedin.com/in/ozhansuat/) - Developer

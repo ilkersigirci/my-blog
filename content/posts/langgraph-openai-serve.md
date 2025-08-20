@@ -1,7 +1,7 @@
 ---
 title: 'LangGraph OpenAI Serve'
 description: 'OpenAI-Compatible API for LangGraph Workflows - Bridge the Gap Between Custom Agents and Standard APIs'
-date: 2025-04-15T22:30:00+08:00
+date: 2025-04-15
 draft: false
 tags:
   - "python"

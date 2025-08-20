@@ -1,6 +1,6 @@
 ---
 title: "GitHub Style Alert Test"
-date: 2025-06-01T10:00:00+08:00
+date: 2010-01-01
 slug: test-alert
 draft: false
 description: "Testing GitHub-style Alert and folding features"
