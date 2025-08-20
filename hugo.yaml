@@ -1,0 +1,349 @@
+baseURL: https://blog.ilkerflix.com
+languageCode: en-US
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+title: Blog
+theme: "hugo-narrow"
+
+
+hasCJKLanguage: false
+enableEmoji: true
+
+permalinks:
+  posts: /posts/:slug/
+  pages: /:slug/
+
+# pagination
+pagination:
+  pagerSize: 6
+  path: "page"
+
+languages:
+  en:
+    languageCode: en-US
+    languageName: "English"
+    weight: 1
+
+taxonomies:
+  category: categories
+  tag: tags
+
+menus:
+  main:
+    - name: nav.journey
+      pageRef: /journey
+      weight: 20
+      params:
+        icon: chart
+    - name: nav.posts
+      pageRef: /posts
+      weight: 30
+      params:
+        icon: posts
+    - name: nav.categories
+      pageRef: /categories
+      weight: 40
+      params:
+        icon: categories
+    - name: nav.tags
+      pageRef: /tags
+      weight: 50
+      params:
+        icon: tags
+    - name: nav.archives
+      pageRef: /archives
+      weight: 60
+      params:
+        icon: archive
+
+
+  # footer menu
+  footer:
+    - name: About
+      pageRef: /about
+      weight: 10
+      params:
+        icon: about
+#    - name: Contact
+#      url: https://google.com
+#      weight: 20
+#      params:
+#        icon: contact
+    - name: RSS Feed
+      url: /index.xml
+      weight: 30
+      params:
+        icon: rss
+
+  # footer social link
+  #social:
+  #  - name: GitHub
+  #    url: https://github.com/ilkersigirci
+  #    weight: 10
+  #    params:
+  #      icon: github
+  #  - name: LinkedIn
+  #    url: https://linkedin.com/in/ilkersigirci
+  #    weight: 30
+  #    params:
+  #      icon: linkedin
+  #  - name: Email
+  #    url: mailto:sigirci.ilker@gmail.com
+  #    weight: 40
+  #    params:
+  #      icon: email
+
+params:
+  # Basic site info with SEO
+  description: "A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design."
+  keywords: ["Blog", "Ilkerflix", "Programming"]
+  defaultAuthor: "İlker SIĞIRCI"
+  language: "en-US"
+  shortName: "IlkerflixBlog"  # PWA
+  images:
+  - "/images/og-default.avif"
+
+  logo:
+    image: "/images/logo.jpg"  # Logo path rel to static folder, leave empty use site title and primary color
+    link: "/"                  # click to home page
+  favicon:
+    svg: "/favicon.svg"        # SVG format favicon (recommended)
+
+
+  author:
+    name: "İlker SIĞIRCI"
+    title: "A Machine Learning Engineer"
+    description: "Passionate about learning the connection between human and artificial brain"
+    avatar: "/images/avatar.svg"
+    social:
+      - name: "GitHub"
+        url: "https://github.com/ilkersigirci"
+        icon: "github"
+      - name: "LinkedIn"
+        url: "https://linkedin.com/in/ilkersigirci"
+        icon: "linkedin"
+      - name: "Email"
+        url: "mailto:sigirci.ilker@gmail.com"
+        icon: "email"
+
+  # UI Components Control
+  showThemeSwitch: true      # Set to false to hide theme style switcher (palette icon)
+  showDarkModeSwitch: true   # Set to false to hide dark mode switcher (sun/moon icon)
+  showLanguageSwitch: true   # Set to false to hide language switcher
+
+  # Header sticky effect
+  stickyHeader: true  # Set to true to enable sticky navigation bar
+
+  # default color scheme
+  colorScheme: "default"
+  themes:
+    default:
+      name: "Default"
+      order: 1
+    claude:
+      name: "Claude"
+      order: 2
+    bumblebee:
+      name: "Bumblebee"
+      order: 3
+    emerald:
+      name: "Emerald"
+      order: 4
+    nord:
+      name: "Nord"
+      order: 5
+    sunset:
+      name: "Sunset"
+      order: 6
+    abyss:
+      name: "Abyss"
+      order: 7
+    dracula:
+      name: "Dracula"
+      order: 8
+    amethyst:
+      name: "Amethyst"
+      order: 9
+    slate:
+      name: "Slate"
+      order: 10
+    twitter:
+      name: "Twitter"
+      order: 11
+
+
+  home:
+    recentPostsCount: 5 # Number of recent posts to show on the home page
+
+  post:
+    showRelated: true           # show related posts
+    relatedPostsCount: 3        # posts number
+
+    license:
+      show: false
+      author: "İlker SIĞIRCI"
+      name: "CC BY-NC-SA 4.0"
+      description: "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please attribute the source, use non-commercially, and maintain the same license."
+      url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      displayName: "CC BY-NC-SA 4.0"
+
+  # comments
+  comments:
+    enabled: false
+    # giscus, disqus, utterances, waline, artalk, twikoo
+    system: "giscus"
+
+    giscus:
+      repo: "tom2almighty/hugo-narrow-giscus"
+      repoId: "R_kgDOO2gwLg"
+      category: "General"
+      categoryId: "DIC_kwDOO2gwLs4CrEaf"
+      mapping: "pathname"
+      strict: "0"
+      reactionsEnabled: "1"
+      emitMetadata: "0"
+      inputPosition: "bottom"
+      theme: "preferred_color_scheme"
+      lang: "en"
+
+    disqus:
+      shortname: ""
+
+
+    utterances:
+      repo: ""
+      issueTerm: "pathname"
+      label: "comment"
+      theme: "preferred-color-scheme"
+
+
+    waline:
+      serverURL: ""
+      lang: "zh-CN"
+
+
+    artalk:
+      server: ""
+      site: ""
+      locale: "zh-CN" # String|Object|"auto"
+      darkMode: "auto"
+      gravatar:
+        mirror: "https://cravatar.cn/avatar/"
+
+
+    twikoo:
+      envId: ""
+      region: "ap-shanghai"
+      path: ""
+      lang: "zh-CN"
+
+
+  analytics:
+    enabled: false
+    baidu:
+      enabled: false
+      id: "your-baidu-analytics-id"
+    clarity:
+      enabled: false
+      analytics: "your-clarity-analytics-id"
+    google:
+      enabled: false
+      id: "your-google-analytics-id"
+    umami:
+      enabled: false
+      id: "your-umami-website-id"
+      src: "https://umami.com/myscript.js"
+      domains: "example.domain.com"
+
+
+  katex:
+    enabled: false
+    delimiters:
+      - left: "$$"
+        right: "$$"
+        display: true
+      - left: "$"
+        right: "$"
+        display: false
+      - left: "\\("
+        right: "\\)"
+        display: false
+      - left: "\\["
+        right: "\\]"
+        display: true
+
+  mermaid:
+    enabled: false
+
+  # GLightbox
+  lightbox:
+    enabled: false
+    loop: true
+    width: 80vw
+    height: 80vh
+    touchNavigation: true
+    draggable: true
+    zoomable: true
+    preload: true
+    descPosition: bottom
+
+  # Justified Gallery
+  justified_gallery:
+    enabled: false
+    rowHeight: 300
+    gutter: 30
+    lastRow: center
+    transitionDuration: 0.3s
+    resizeDebounce: 100
+    rowHeightTolerance: 0.25
+    maxRowsCount: 999999
+    calculateItemsHeight: false
+
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    lineNos: false
+    lineNumbersInTable: false # Set to false
+    noClasses: false
+    style: github # No need to change
+    tabWidth: 2
+
+
+codeblock:
+  collapse:
+    enabled: true
+    defaultState: expanded  # expanded, collapsed
+    autoCollapseLines: 30
+    autoCollapseHeight: 400
+    collapsedHeight: 120
+
+readingProgress:
+  enabled: true
+  height: 3
+  showOnHomepage: false
+  smoothScroll: true
+  hideOnComplete: false
+
+
+outputs:
+  home: ["HTML", "RSS", "JSON", "WebAppManifest"]
+
+outputFormats:
+  WebAppManifest:
+    mediaType: "application/manifest+json"
+    baseName: "site"
+    isPlainText: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: 0.146.0

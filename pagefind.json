@@ -1,8 +1,0 @@
-{
-    "site": "build",
-    "vite_plugin_pagefind": {
-        "assets_dir": "static",
-        "build_command": "bun run build",
-        "dev_strategy": "lazy"
-    }
-}
