@@ -13,7 +13,7 @@ links:
     description: "LinkedIn Profile"
 ---
 
-A Machine Learning Engineer based in Ankara, Turkey
+Machine Learning Engineer based in Ankara, Turkey
 
 Passionate about learning the connection between human and artificial brain. Deploys several self-hosted services as my hobby.
 
