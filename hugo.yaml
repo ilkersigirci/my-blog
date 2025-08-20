@@ -2,7 +2,7 @@ baseURL: https://blog.ilkerflix.com
 languageCode: en-US
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
-title: Blog
+title: İlker SIĞIRCI
 theme: "hugo-narrow"
 
 
@@ -127,9 +127,9 @@ params:
         icon: "email"
 
   # UI Components Control
-  showThemeSwitch: true      # Set to false to hide theme style switcher (palette icon)
+  showThemeSwitch: false     # Set to false to hide theme style switcher (palette icon)
   showDarkModeSwitch: true   # Set to false to hide dark mode switcher (sun/moon icon)
-  showLanguageSwitch: true   # Set to false to hide language switcher
+  showLanguageSwitch: false  # Set to false to hide language switcher
 
   # Header sticky effect
   stickyHeader: true  # Set to true to enable sticky navigation bar
