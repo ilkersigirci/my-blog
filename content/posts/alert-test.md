@@ -2,7 +2,7 @@
 title: "GitHub Style Alert Test"
 date: 2010-01-01
 slug: test-alert
-draft: false
+draft: true
 description: "Testing GitHub-style Alert and folding features"
 tags: 
   - "test"

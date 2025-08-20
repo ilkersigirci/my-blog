@@ -3,7 +3,7 @@ title: "Markdown Syntax Test Document"
 description: "This is a test document to verify various Markdown syntax."
 summary: "This is a test document containing various Markdown syntax to verify the completeness of prose styles."
 date: 2010-01-01
-draft: false
+draft: true
 tags: 
   - "test"
   - "markdown"

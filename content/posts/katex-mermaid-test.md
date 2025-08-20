@@ -2,7 +2,7 @@
 title: "KaTeX and Mermaid Test"
 description: "Testing KaTeX and Mermaid features"
 date: 2010-01-01
-draft: false
+draft: true
 tags: 
   - "test"
   - "katex"

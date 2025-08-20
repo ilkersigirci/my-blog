@@ -2,7 +2,7 @@
 title: "Code Highlighting Test"
 description: "Testing code highlighting features"
 date: 2010-01-01
-draft: false
+draft: true
 tags: 
   - "test"
   - "code"

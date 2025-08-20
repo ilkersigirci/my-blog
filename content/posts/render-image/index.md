@@ -2,7 +2,7 @@
 title: "Image Rendering Test"
 description: "Testing the simple image rendering features"
 date: 2010-01-01
-draft: false
+draft: true
 tags: 
   - "test"
   - "image"
