@@ -135,7 +135,7 @@ params:
   stickyHeader: true  # Set to true to enable sticky navigation bar
 
   # default color scheme
-  colorScheme: "default"
+  colorScheme: "twitter"
   themes:
     default:
       name: "Default"
