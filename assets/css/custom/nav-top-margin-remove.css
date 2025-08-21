@@ -1,0 +1,35 @@
+/* Custom CSS to remove top margin from navigation bar */
+
+/* Remove top padding from header while keeping bottom padding
+   This overrides the py-6 Tailwind class that adds padding-block */
+header {
+  padding-top: 0 !important;
+  padding-bottom: calc(var(--spacing) * 6) !important; /* Keep 1.5rem bottom padding */
+}
+
+/* More specific override for when py-6 is applied to header */
+header.py-6 {
+  padding-block: 0 calc(var(--spacing) * 6) !important;
+}
+
+/* Alternative selector for maximum compatibility */
+/* .py-6:is(header) {
+  padding-top: 0 !important;
+  padding-bottom: calc(var(--spacing) * 6) !important;
+} */
+
+/* Ensure body has no unwanted top spacing */
+body {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure sticky header stays at the very top */
+header.sticky.top-0 {
+  top: 0 !important;
+}
+
+/* Prevent content overlap by removing extra top margin from main */
+main {
+  margin-top: 0 !important;
+}
