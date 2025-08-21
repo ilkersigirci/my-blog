@@ -304,6 +304,20 @@ params:
     maxRowsCount: 999999
     calculateItemsHeight: false
 
+  codeblock:
+    collapse:
+      enabled: true
+      defaultState: expanded  # expanded, collapsed
+      autoCollapseLines: 30
+      autoCollapseHeight: 400
+      collapsedHeight: 120
+
+  readingProgress:
+    enabled: false
+    height: 3
+    showOnHomepage: false
+    smoothScroll: true
+    hideOnComplete: false
 
 markup:
   tableOfContents:
@@ -321,23 +335,6 @@ markup:
     noClasses: false
     style: github # No need to change
     tabWidth: 2
-
-
-codeblock:
-  collapse:
-    enabled: true
-    defaultState: expanded  # expanded, collapsed
-    autoCollapseLines: 30
-    autoCollapseHeight: 400
-    collapsedHeight: 120
-
-readingProgress:
-  enabled: true
-  height: 3
-  showOnHomepage: false
-  smoothScroll: true
-  hideOnComplete: false
-
 
 outputs:
   home: ["HTML", "RSS", "JSON", "WebAppManifest"]
