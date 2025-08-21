@@ -116,13 +116,13 @@ params:
     description: "Passionate about learning the connection between human and artificial brain"
     avatar: "/images/avatar.svg"
     social:
-      - name: "GitHub"
+      - name: ""
         url: "https://github.com/ilkersigirci"
         icon: "github"
-      - name: "LinkedIn"
+      - name: ""
         url: "https://linkedin.com/in/ilkersigirci"
         icon: "linkedin"
-      - name: "Email"
+      - name: ""
         url: "mailto:sigirci.ilker@gmail.com"
         icon: "email"
 
