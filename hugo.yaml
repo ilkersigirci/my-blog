@@ -72,11 +72,11 @@ menus:
 
   # footer social link
   social:
-  #  - name: GitHub
-  #    url: https://github.com/ilkersigirci
-  #    weight: 10
-  #    params:
-  #      icon: github
+   - name: Blog GitHub
+     url: https://github.com/ilkersigirci/my-blog
+     weight: 10
+     params:
+       icon: github
   #  - name: LinkedIn
   #    url: https://linkedin.com/in/ilkersigirci
   #    weight: 30
@@ -87,11 +87,11 @@ menus:
   #    weight: 40
   #    params:
   #      icon: email
-  - name: RSS Feed
-    url: /index.xml
-    weight: 10
-    params:
-      icon: rss
+   - name: Blog RSS Feed
+     url: /index.xml
+     weight: 10
+     params:
+       icon: rss
 
 params:
   # Basic site info with SEO
