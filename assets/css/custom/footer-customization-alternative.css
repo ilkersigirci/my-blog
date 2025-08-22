@@ -1,0 +1,15 @@
+/* Hide the "Powered by" section in footer */
+/* footer .text-muted-foreground p:last-child {
+    display: none;
+} */
+
+/* Force horizontal layout on footer */
+/* footer > div > div:last-child {
+    flex-direction: row !important;
+}
+
+@media (max-width: 768px) {
+    footer > div > div:last-child {
+        flex-direction: row !important;
+    }
+} */
