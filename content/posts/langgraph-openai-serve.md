@@ -1,6 +1,7 @@
 ---
 title: 'LangGraph OpenAI Serve'
 description: 'OpenAI-Compatible API for LangGraph Workflows - Bridge the Gap Between Custom Agents and Standard APIs'
+slug: "langgraph-openai-serve"
 date: 2025-04-15
 draft: false
 tags:
@@ -11,6 +12,8 @@ tags:
 categories:
   - "Work"
 ---
+
+{{< link group="langgraph-openai-serve" >}}
 
 In the rapidly evolving landscape of AI development, developers often face a common challenge: how to expose custom AI workflows and agents through standardized interfaces that can integrate seamlessly with existing tools and client libraries. Enter **LangGraph OpenAI Serve** - a powerful Python package that provides an OpenAI-compatible API for LangGraph instances, enabling developers to leverage their custom AI workflows while maintaining compatibility with the extensive OpenAI ecosystem.
 

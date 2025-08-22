@@ -1,6 +1,7 @@
 ---
 title: "Python Template"
 description: "My Custom Python Template for Developing Python Applications Easily"
+slug: "python-template"
 date: 2024-08-20
 draft: false
 tags:
@@ -10,6 +11,8 @@ tags:
 categories:
   - "Work"
 ---
+
+{{< link group="python-template" >}}
 
 ## Project Structure
 

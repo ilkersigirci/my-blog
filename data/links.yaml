@@ -6,3 +6,21 @@ my-thesis:
   - title: "Thesis"
     description: "PDF"
     url: "pdfs/Thesis.pdf"
+
+python-template:
+  - title: "Github"
+    description: "Project Repository"
+    url: "https://github.com/ilkersigirci/python-template"
+    icon: "https://github.com/fluidicon.png"
+  - title: "Documentation"
+    description: "Project Documentation"
+    url: "https://ilkersigirci.github.io/python-template"
+
+langgraph-openai-serve:
+  - title: "Github"
+    description: "Project Repository"
+    url: "https://github.com/ilkersigirci/langgraph-openai-serve"
+    icon: "https://github.com/fluidicon.png"
+  - title: "Documentation"
+    description: "Project Documentation"
+    url: "https://ilkersigirci.github.io/langgraph-openai-serve"
