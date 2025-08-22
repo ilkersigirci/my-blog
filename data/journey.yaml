@@ -9,9 +9,6 @@
       description: "I have been promoted to Senior Machine Learning Engineer at Databoss"
       date: "January"
       icon: "work"
-      company: "Databoss"
-
-
 
 - year: 2024
   milestones:
@@ -26,10 +23,7 @@
       description: "Graduated from Middle East Technical University, Computer Engineering Department"
       date: "September"
       icon: "graduation"
-      company: "Middle East Technical University"
-      location: "Turkey"
       link: "https://blog.ilkerflix.com/posts/my-thesis/"
-      linkText: "Thesis: On The Use of Large Language Model for Virtual Screening"
 
 - year: 2021
   milestones:
@@ -37,7 +31,6 @@
       description: "I have started as Machine Learning Software Engineer at Databoss Machine Learning Team"
       date: "June"
       icon: "work"
-      company: "Databoss"
 
 - year: 2020
   milestones:
@@ -45,18 +38,14 @@
       description: "I have started as Software Engineer at Havelsan Simulation Department"
       date: "October"
       icon: "work"
-      company: "Havelsan"
     
     - title: "Achieved first place at the CENG Demo Day"
       description: "Our project, PosePhys, was awarded first place in the METU CENG Senior Project Competition. Human Pose Estimation for Physiotherapy."
       date: "June"
       icon: "achievement"
       link: "https://blog.ilkerflix.com/posts/posephys/"
-      linkText: "PosePhys"
     
     - title: "Bachelor's degree, Computer Engineering"
       description: "Graduated from Middle East Technical University, Computer Engineering Department"
       date: "June"
       icon: "graduation"
-      company: "Middle East Technical University"
-      location: "Turkey"
