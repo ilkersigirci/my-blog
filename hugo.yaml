@@ -77,16 +77,6 @@ menus:
      weight: 10
      params:
        icon: github
-  #  - name: LinkedIn
-  #    url: https://linkedin.com/in/ilkersigirci
-  #    weight: 30
-  #    params:
-  #      icon: linkedin
-  #  - name: Email
-  #    url: mailto:sigirci.ilker@gmail.com
-  #    weight: 40
-  #    params:
-  #      icon: email
    - name: Blog RSS Feed
      url: /index.xml
      weight: 10
@@ -116,15 +106,15 @@ params:
     description: "Passionate about learning the connection between human and artificial brain"
     avatar: "/images/avatar.svg"
     social:
-      - name: ""
-        url: "https://github.com/ilkersigirci"
+      - url: "https://github.com/ilkersigirci"
         icon: "github"
-      - name: ""
-        url: "https://linkedin.com/in/ilkersigirci"
+        # name: "Github"
+      - url: "https://linkedin.com/in/ilkersigirci"
         icon: "linkedin"
-      - name: ""
-        url: "mailto:sigirci.ilker@gmail.com"
+        # name: "LinkedIn"
+      - url: "mailto:sigirci.ilker@gmail.com"
         icon: "email"
+        # name: "Email"
 
   # UI Components Control
   showThemeSwitch: false     # Set to false to hide theme style switcher (palette icon)

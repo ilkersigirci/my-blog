@@ -1,0 +1,14 @@
+/* Fix for social icons centering - hide empty spans */
+.author-section a span:empty {
+    display: none !important;
+}
+
+/* Remove the gap between icon and empty text */
+.author-section a:has(span:empty) {
+    gap: 0 !important;
+}
+
+/* Fallback for browsers that don't support :has() */
+.author-section a span[class*="font-medium"]:empty {
+    display: none !important;
+}
