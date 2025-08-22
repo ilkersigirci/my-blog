@@ -71,7 +71,7 @@
         {{- end -}}
 
         {{- /* Render each month */ -}}
-        {{- $monthOrder := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December" "Unknown" -}}
+        {{- $monthOrder := slice "December" "November" "October" "September" "August" "July" "June" "May" "April" "March" "February" "January" "Unknown" -}}
         {{- range $month := $monthOrder -}}
           {{- $monthMilestones := index $milestonesByMonth $month -}}
           {{- if $monthMilestones -}}
