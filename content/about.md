@@ -18,4 +18,4 @@ Passionate about learning the connection between human and artificial brain.
 
 Deploys several self-hosted services as my hobby.
 
-![GitHub Commits](https://raw.githubusercontent.com/ilkersigirci/ilkersigirci/9a32f58c3a493bb345c2a3359e9fcdb7dd307c06/github-metrics.svg)
+![GitHub Commits](https://raw.githubusercontent.com/ilkersigirci/ilkersigirci/refs/heads/main/github-metrics.svg)
