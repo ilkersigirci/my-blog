@@ -23,7 +23,7 @@
       description: "Graduated from Middle East Technical University, Computer Engineering Department"
       date: "September"
       icon: "graduation"
-      link: "https://blog.ilkerflix.com/posts/my-thesis/"
+      link: "/posts/my-thesis"
 
 - year: 2021
   milestones:
@@ -43,7 +43,7 @@
       description: "Our project, PosePhys, was awarded first place in the METU CENG Senior Project Competition. Human Pose Estimation for Physiotherapy."
       date: "June"
       icon: "achievement"
-      link: "https://blog.ilkerflix.com/posts/posephys/"
+      link: "/posts/posephys"
     
     - title: "Bachelor's degree, Computer Engineering"
       description: "Graduated from Middle East Technical University, Computer Engineering Department"
