@@ -1,0 +1,22 @@
+User-agent: *
+
+# Allow crawling of the main content
+Allow: /
+
+# Disallow admin and private paths (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Disallow search and pagination query parameters
+Disallow: /*?
+Disallow: /*/page/
+
+# Allow crawling of CSS, JS, and image files for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /favicon.ico
+Allow: /robots.txt
+
+# Sitemap location (Hugo typically generates this automatically)
+{{ with .Site.BaseURL }}Sitemap: {{ . }}sitemap.xml{{ end }}
