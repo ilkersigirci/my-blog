@@ -24,3 +24,11 @@ To run the hugo prompt file, in the copilot window
 ```bash
 /hugo refactor the project
 ```
+
+## Cloudflare.Pages
+
+Build Configuration
+
+- Framework Preset: Hugo
+- Build Command: `hugo --gc --minify`
+- Publish Directory: `public`
