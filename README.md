@@ -16,3 +16,11 @@ git submodule update --remote themes/hugo-narrow
 git add themes/hugo-narrow
 git commit -m "Update hugo-narrow submodule to latest
 ```
+
+## Copilot
+
+To run the hugo prompt file, in the copilot window
+
+```bash
+/hugo refactor the project
+```
