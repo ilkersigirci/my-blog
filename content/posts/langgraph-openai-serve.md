@@ -42,10 +42,6 @@ flowchart TB
     C --> E[Message Converter]
     E --> F[Graph Registry]
     F --> G[Your LangGraph Workflows]
-    
-    style B fill:#e3f2fd
-    style F fill:#c8e6c9
-    style G fill:#e8f5e8
 ```
 
 ## How it Works
