@@ -63,7 +63,7 @@ A generic base repository interface covers common operations used in most projec
 
 ## Logfire: Modern Observability Solution
 
-Traditional observability setups with ELK stacks, Jaeger configuration, and complex monitoring systems can be challenging to implement. Logfire from the Pydantic team offers a streamlined alternative that simplifies observability while maintaining comprehensive functionality.
+Traditional observability setups with ELK stacks, Jaeger configuration, and complex monitoring systems can be challenging to implement. [Logfire](https://github.com/pydantic/logfire) from the Pydantic team offers a streamlined alternative that simplifies observability while maintaining comprehensive functionality.
 
 Logfire provides:
 
@@ -78,9 +78,9 @@ The integration with FastAPI's middleware system enables automatic tracing of re
 
 Celery has been the standard for background tasks, but its async support feels bolted on rather than built-in. This often leads to workarounds when integrating with async FastAPI applications.
 
-Taskiq offers a modern alternative with native async support:
+[Taskiq](https://github.com/taskiq-python/taskiq) offers a modern alternative with native async support:
 - Full async support unlike Celery's partial async implementation
-- Multiple broker support including Redis, RabbitMQ, and Kafka
+- Multiple broker support including [Redis](https://redis.io/), [RabbitMQ](https://www.rabbitmq.com/), and [Kafka](https://kafka.apache.org/)
 - Better integration with FastAPI's async nature
 - Cleaner API and better error handling
 
@@ -88,7 +88,7 @@ The template includes configuration for both development and production setups, 
 
 ## Database Migrations with Alembic
 
-Database schema evolution is a critical aspect of any long-lived project. The template includes Alembic configuration for handling database migrations with SQLAlchemy. The setup includes:
+Database schema evolution is a critical aspect of any long-lived project. The template includes [Alembic](https://github.com/sqlalchemy/alembic) configuration for handling database migrations with [SQLAlchemy](https://github.com/sqlalchemy/sqlalchemy). The setup includes:
 
 - Automatic migration generation based on model changes
 - Environment-specific configuration
@@ -106,7 +106,7 @@ Building testing into every project from the beginning prevents technical debt. 
 - Repository tests ensure data access works correctly
 - Utility function tests cover helper functions and shared code
 
-Using pytest with async support throughout means tests can be written in the same style as application code, eliminating context switching between sync and async patterns.
+Using [pytest](https://github.com/pytest-dev/pytest) with async support throughout means tests can be written in the same style as application code, eliminating context switching between sync and async patterns.
 
 ## Development Tools
 
@@ -116,9 +116,9 @@ Effective development requires tools that work reliably without extensive config
 
 **Pre-commit Hooks**: Automatically format code and run linters before commits, ensuring consistent code quality across team members.
 
-**Ruff**: Modern Python linter and formatter that's significantly faster than traditional tools while providing comprehensive code quality checks.
+**[Ruff](https://github.com/astral-sh/ruff)**: Modern Python linter and formatter that's significantly faster than traditional tools while providing comprehensive code quality checks.
 
-**UV**: Modern package management solution that provides significantly improved performance over traditional Python package managers.
+**[UV](https://github.com/astral-sh/uv)**: Modern package management solution that provides significantly improved performance over traditional Python package managers.
 
 These tools eliminate friction from the development workflow without requiring extensive configuration.
 
@@ -126,7 +126,7 @@ These tools eliminate friction from the development workflow without requiring e
 
 Development environments often mask issues that surface in production. Making applications work reliably under real-world conditions requires addressing concerns like resource management, error handling, and monitoring.
 
-The template includes Docker configuration refined through multiple production deployments:
+The template includes `Docker` configuration refined through multiple production deployments:
 
 These considerations address real production environment challenges rather than theoretical concerns.
 
@@ -144,7 +144,7 @@ The authentication system is built as a reusable FastAPI dependency, making it e
 
 Configuration issues are common sources of deployment problems. Wrong environment variables, missing settings, and values that work in development but fail in production can cause significant issues.
 
-The template uses Pydantic Settings to address these problems:
+The template uses [Pydantic Settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings) to address these problems:
 - Environment variable validation and type checking
 - Documentation for all configuration options
 - Sensible defaults for development environments
@@ -174,7 +174,7 @@ This structure improves maintainability by keeping related functionality togethe
 
 Beyond basic logging, the template includes comprehensive monitoring capabilities:
 
-**Prometheus Integration**: Automatic collection of application metrics including request counts, response times, and custom business metrics.
+**[Prometheus](https://github.com/prometheus/prometheus) Integration**: Automatic collection of application metrics including request counts, response times, and custom business metrics.
 
 **Health Checks**: Multiple health check endpoints that verify different aspects of the application:
 - Basic liveness check
