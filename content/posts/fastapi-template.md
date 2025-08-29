@@ -33,7 +33,7 @@ Each painful experience taught me something valuable, but I kept repeating the s
 
 ## Architectural Design: Lessons from Netflix
 
-After evaluating various project structures, a layered architecture inspired by Netflix's Dispatch project emerged as the most effective approach. This design addresses the common problems with typical "organize by file type" structures taught in many tutorials.
+After evaluating various project structures, a layered architecture inspired by [Netflix's Dispatch](https://github.com/Netflix/dispatch) project emerged as the most effective approach. This design addresses the common problems with typical "organize by file type" structures taught in many tutorials.
 
 Here's what works well in practice:
 
