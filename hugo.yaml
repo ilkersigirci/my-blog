@@ -91,6 +91,9 @@ params:
   defaultAuthor: "İlker SIĞIRCI"
   language: "en-US"
   shortName: "IlkerflixBlog"  # PWA
+
+  dock: always # Options: "scroll" (show on scroll up), "always" (always visible), "float" (floating)
+  
   images:
   - "/images/og-default.avif"
 
@@ -99,7 +102,6 @@ params:
     link: "/"                  # click to home page
   favicon:
     svg: "/favicon.svg"        # SVG format favicon (recommended)
-
 
   author:
     name: "İlker SIĞIRCI"
