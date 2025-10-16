@@ -13,6 +13,8 @@ categories:
   - "Work"
 ---
 
+{{< link group="fastapi-template" >}}
+
 Over the past few years, I've built quite a few FastAPI applications for various projects. Each time I started a new one, I found myself copying and pasting the same boilerplate code, setting up the same project structure, and making the same architectural decisions over and over again. Sound familiar?
 
 I got tired of this repetitive process and decided to do something about it. I wanted to create a comprehensive FastAPI template that would save me (and hopefully others) hours of setup time while incorporating all the lessons I've learned from building APIs in production.

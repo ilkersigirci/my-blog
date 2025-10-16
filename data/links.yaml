@@ -1,3 +1,22 @@
+fastapi-template:
+  - title: "Github"
+    description: "Project Repository"
+    url: "https://github.com/ilkersigirci/api-template"
+    icon: "https://github.com/fluidicon.png"
+  - title: "Documentation"
+    description: "Project Documentation"
+    url: "https://ilkersigirci.github.io/api-template"
+
+
+langgraph-openai-serve:
+  - title: "Github"
+    description: "Project Repository"
+    url: "https://github.com/ilkersigirci/langgraph-openai-serve"
+    icon: "https://github.com/fluidicon.png"
+  - title: "Documentation"
+    description: "Project Documentation"
+    url: "https://ilkersigirci.github.io/langgraph-openai-serve"
+
 my-thesis:
   - title: "Github"
     description: "Thesis Github Repo"
@@ -15,12 +34,3 @@ python-template:
   - title: "Documentation"
     description: "Project Documentation"
     url: "https://ilkersigirci.github.io/python-template"
-
-langgraph-openai-serve:
-  - title: "Github"
-    description: "Project Repository"
-    url: "https://github.com/ilkersigirci/langgraph-openai-serve"
-    icon: "https://github.com/fluidicon.png"
-  - title: "Documentation"
-    description: "Project Documentation"
-    url: "https://ilkersigirci.github.io/langgraph-openai-serve"
