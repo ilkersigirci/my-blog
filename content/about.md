@@ -1,6 +1,7 @@
 ---
 title: "About"
 layout: "about"
+toc: false
 date: 2024-01-01T00:00:00+08:00
 summary: "Machine Learning Engineer based in Ankara, Turkey"
 links:

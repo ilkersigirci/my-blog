@@ -1,0 +1,57 @@
+main:
+  - name: nav.journey
+    pageRef: /journey
+    weight: 20
+    params:
+      icon: chart
+  - name: nav.posts
+    pageRef: /posts
+    weight: 30
+    params:
+      icon: posts
+  - name: nav.projects
+    pageRef: /projects
+    weight: 25
+    params:
+      icon: projects
+  - name: nav.categories
+    pageRef: /categories
+    weight: 40
+    params:
+      icon: categories
+  - name: nav.tags
+    pageRef: /tags
+    weight: 50
+    params:
+      icon: tags
+  - name: nav.archives
+    pageRef: /archives
+    weight: 60
+    params:
+      icon: archive
+
+# footer menu
+# footer:
+#   - name: About
+#     pageRef: /about
+#     weight: 10
+#     params:
+#       icon: about
+#   - name: RSS Feed
+#     url: /index.xml
+#     weight: 30
+#     params:
+#       icon: rss
+
+# footer social link
+social:
+ - name: Blog GitHub
+   url: https://github.com/ilkersigirci/my-blog
+   weight: 10
+   params:
+     icon: github
+ - name: Blog RSS Feed
+   url: /index.xml
+   weight: 10
+   params:
+     icon: rss
