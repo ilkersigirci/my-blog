@@ -24,11 +24,11 @@ main:
     weight: 50
     params:
       icon: tags
-  - name: nav.archives
-    pageRef: /archives
-    weight: 60
-    params:
-      icon: archive
+  # - name: nav.archives
+  #   pageRef: /archives
+  #   weight: 60
+  #   params:
+  #     icon: archive
 
 # footer menu
 # footer:
