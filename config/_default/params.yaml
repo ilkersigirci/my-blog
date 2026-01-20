@@ -61,8 +61,6 @@ series:
   showProgress: true    # Show reading progress (e.g., "2/5")
   showInHeader: true    # Show series info card in article header
 
-
-
 # Default color scheme
 colorScheme: "twitter"
 themes:
@@ -102,7 +100,7 @@ themes:
 
 # Home page configuration
 home:
-  recentPostsCount: 5  # Number of recent posts to show on the home page
+  recentPostsCount: 3  # Number of recent posts to show on the home page
 
   # Content order configuration - customize the order of home page sections
   # Available sections: author-section, recent-posts, featured-projects, page-content
@@ -111,7 +109,7 @@ home:
     - author-section
     - page-content
     - recent-posts
-    - featured-projects.html
+    - featured-projects
 
 # Post configuration
 post:

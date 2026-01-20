@@ -6,12 +6,12 @@ main:
       icon: chart
   - name: nav.posts
     pageRef: /posts
-    weight: 30
+    weight: 25
     params:
       icon: posts
   - name: nav.projects
     pageRef: /projects
-    weight: 25
+    weight: 30
     params:
       icon: projects
   - name: nav.categories

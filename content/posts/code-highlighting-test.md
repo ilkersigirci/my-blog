@@ -8,6 +8,8 @@ tags:
   - "code"
 categories:
   - "Test"
+series:
+  - "Markdown Tests"
 slug: code-highlighting-test
 ---
 

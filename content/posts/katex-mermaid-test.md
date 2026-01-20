@@ -1,13 +1,15 @@
 ---
 title: "KaTeX and Mermaid Test"
 description: "Testing KaTeX and Mermaid features"
-date: 2010-01-01
+date: 2010-01-02
 draft: true
 tags: 
   - "test"
   - "katex"
 categories:
   - "Test"
+series:
+  - "Markdown Tests"
 slug: code-highlighting-test
 katex: true
 mermaid: true

@@ -1,13 +1,15 @@
 ---
 title: "Image Rendering Test"
 description: "Testing the simple image rendering features"
-date: 2010-01-01
+date: 2010-01-04
 draft: true
 tags: 
   - "test"
   - "image"
 categories:
   - "Test"
+series:
+  - "Markdown Tests"
 lightbox:
   enabled: true
 justified_gallery:

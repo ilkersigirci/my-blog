@@ -1,9 +1,10 @@
 ---
-title: 'API Template'
+title: 'FastAPI Template'
 description: 'FastAPI Template with Industry Standard Observability'
-slug: "api-template"
+slug: "fastapi-template"
 date: 2025-06-20
 draft: false
+featured: true
 tags:
   - "python"
   - "programming"
