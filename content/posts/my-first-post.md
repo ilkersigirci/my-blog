@@ -2,6 +2,7 @@
 title: "My First Post"
 description: "First Blog Post Description"
 date: 2024-04-01
+toc: false
 draft: false
 categories: 
   - "Blog"

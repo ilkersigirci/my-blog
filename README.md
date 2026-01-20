@@ -2,6 +2,23 @@
 
 My blog using [hugo narrow](https://github.com/tom2almighty/hugo-narrow) theme
 
+## Development
+
+Install `Hugo Extended` to your machine. [Go](https://go.dev/doc/install) is required to install `Hugo Extended`.
+
+```bash
+# Install gcc and related build packages
+sudo apt install -y build-essential
+
+# Install hugo
+CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@latest
+```
+
+Clone the repo with submodules
+```bash
+git clone --recurse-submodules git@github.com:ilkersigirci/my-blog.git
+```
+
 Run the server locally
 ```bash
 hugo server -D --bind 0.0.0.0
