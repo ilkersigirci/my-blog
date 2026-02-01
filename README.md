@@ -31,7 +31,7 @@ git submodule update --remote themes/hugo-narrow
 
 # Push it to the github
 git add themes/hugo-narrow
-git commit -m "Update hugo-narrow submodule to latest
+git commit -m "Update hugo-narrow submodule to latest"
 ```
 
 ## Copilot
