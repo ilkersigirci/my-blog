@@ -77,17 +77,18 @@ Logfire provides:
 
 The integration with FastAPI's middleware system enables automatic tracing of requests, database queries, and custom events without manual instrumentation.
 
-## Taskiq: Modern Alternative to Celery
+## Hatchet: Workflow Engine for Background Tasks
 
 Celery has been the standard for background tasks, but its async support feels bolted on rather than built-in. This often leads to workarounds when integrating with async FastAPI applications.
 
-[Taskiq](https://github.com/taskiq-python/taskiq) offers a modern alternative with native async support:
-- Full async support unlike Celery's partial async implementation
-- Multiple broker support including [Redis](https://redis.io/), [RabbitMQ](https://www.rabbitmq.com/), and [Kafka](https://kafka.apache.org/)
-- Better integration with FastAPI's async nature
-- Cleaner API and better error handling
+[Hatchet](https://hatchet.run) offers a modern alternative with async-friendly workflow execution:
+- Full async support for Python task execution
+- Durable workflow runs with built-in run tracking and status APIs
+- Built-in UI for monitoring runs, worker input/output, and execution progress
+- Better fit for service-oriented architectures where API and workers are deployed separately
+- Cleaner API for triggering runs and reading results/status
 
-The template includes configuration for both development and production setups, complete with Docker Compose files for quick setup.
+The template includes Hatchet-based worker setup for both development and production, with Docker Compose support for quick startup.
 
 ## Database Migrations with Alembic
 
@@ -188,12 +189,13 @@ Beyond basic logging, the template includes comprehensive monitoring capabilitie
 
 ## Worker Integration
 
-The template seamlessly integrates background task processing with the main API application. Taskiq workers can be deployed alongside the API or separately, providing flexibility for different deployment scenarios.
+The template seamlessly integrates background task processing with the main API application. Hatchet workers can be deployed alongside the API or separately, providing flexibility for different deployment scenarios.
 
 The worker system includes:
-- Task scheduling for periodic operations
+- Workflow run triggering from API endpoints
 - Error handling and retry mechanisms
-- Task result storage and retrieval
+- Run status and result retrieval
+- UI-based inspection of workflow status and worker input/output
 - Monitoring and observability for background tasks
 
 ## Template Philosophy and Goals
