@@ -77,6 +77,8 @@ Logfire provides:
 
 The integration with FastAPI's middleware system enables automatic tracing of requests, database queries, and custom events without manual instrumentation.
 
+![Logfire OTel UI](images/logfire_ui.png)
+
 ## Hatchet: Workflow Engine for Background Tasks
 
 Celery has been the standard for background tasks, but its async support feels bolted on rather than built-in. This often leads to workarounds when integrating with async FastAPI applications.
@@ -89,6 +91,8 @@ Celery has been the standard for background tasks, but its async support feels b
 - Cleaner API for triggering runs and reading results/status
 
 The template includes Hatchet-based worker setup for both development and production, with Docker Compose support for quick startup.
+
+![Hathcet Task UI](images/hatchet_ui.png)
 
 ## Database Migrations with Alembic
 
