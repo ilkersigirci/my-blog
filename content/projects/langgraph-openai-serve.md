@@ -4,6 +4,7 @@ description: 'OpenAI-Compatible API for LangGraph Workflows - Bridge the Gap Bet
 slug: "langgraph-openai-serve"
 date: 2025-04-15
 draft: false
+featured: true
 tags:
   - "python"
   - "programming"

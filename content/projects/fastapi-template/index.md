@@ -12,6 +12,8 @@ tags:
   - "fastapi"
 categories:
   - "Work"
+lightbox:
+  enabled: true
 status: "completed"
 ---
 

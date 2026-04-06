@@ -4,6 +4,7 @@ summary: "On The Use of Large Language Models for Virtual Screening"
 slug: "my-thesis"
 date: 2024-07-27
 draft: false
+toc: false
 tags: 
   - "thesis"
   - "machine-learning"
