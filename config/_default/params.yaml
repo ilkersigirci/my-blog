@@ -48,18 +48,7 @@ dock: "always"
 # TOC (Table of Contents)
 toc:
   enabled: true         # Enable or disable TOC globally
-  position: "left"      # Options: card left right
-  maxWidth: "280px"
-  maxHeight: "80vh"
-
-# Series (Document Series Navigation)
-series:
-  enabled: true         # Enable or disable Series globally
-  position: "right"     # Options: card left right
-  maxWidth: "280px"
-  maxHeight: "80vh"
-  showProgress: true    # Show reading progress (e.g., "2/5")
-  showInHeader: true    # Show series info card in article header
+  position: "side"      # Options: center | side
 
 # Default color scheme
 colorScheme: "twitter"
@@ -211,25 +200,15 @@ mermaid:
 lightbox:
   enabled: false
   loop: true
-  width: 80vw
-  height: 80vh
-  touchNavigation: true
-  draggable: true
-  zoomable: true
-  preload: true
-  descPosition: bottom
 
-# Justified Gallery
-justified_gallery:
+# Gallery
+gallery:
   enabled: false
-  rowHeight: 300
-  gutter: 30
-  lastRow: center
-  transitionDuration: 0.3s
-  resizeDebounce: 100
-  rowHeightTolerance: 0.25
-  maxRowsCount: 999999
-  calculateItemsHeight: false
+  defaultLayout: justified
+  gap: 30
+  targetRowHeight: 300
+  lastRowBehavior: center
+  columns: auto
 
 # Code block
 codeblock:

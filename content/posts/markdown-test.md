@@ -131,6 +131,30 @@ print(fibonacci(10))
 }
 ```
 
+## Tabs Shortcode
+
+Use the `tabs` and `tab` shortcodes to switch between multiple content panes.
+
+{{< tabs >}}
+{{< tab label="Overview" >}}
+This is a simple overview panel with regular Markdown content.
+
+- Works with lists
+- Works with emphasis
+- Works with links like [Hugo](https://gohugo.io)
+{{< /tab >}}
+{{< tab label="Code" >}}
+```javascript {filename=example.js}
+function hello(name) {
+  return `Hello, ${name}`;
+}
+```
+{{< /tab >}}
+{{< tab label="Result" >}}
+> Tabs are rendered as interactive panels and can contain rich Markdown.
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Tables
 
 | Left Align | Center Align | Right Align |

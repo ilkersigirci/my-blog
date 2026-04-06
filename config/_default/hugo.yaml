@@ -9,6 +9,9 @@ hasCJKLanguage: false
 enableEmoji: true
 enableRobotsTXT: true
 
+# Main section configuration for homepage/search/archives
+mainSections: ["posts", "projects"]
+
 permalinks:
   posts: /posts/:slug/
   projects: /projects/:slug/
