@@ -12,6 +12,7 @@ tags:
   - "fastapi"
 categories:
   - "Work"
+status: "completed"
 ---
 
 {{< link group="fastapi-template" >}}

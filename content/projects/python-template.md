@@ -10,6 +10,7 @@ tags:
   - "template"
 categories:
   - "Work"
+status: "completed"
 ---
 
 {{< link group="python-template" >}}

@@ -12,6 +12,7 @@ tags:
 categories:
   - "Work"
 mermaid: true
+status: "completed"
 ---
 
 {{< link group="langgraph-openai-serve" >}}
