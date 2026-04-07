@@ -19,7 +19,7 @@
 
       {{ with .Description }}
         <div class="prose prose-neutral dark:prose-invert max-w-none">
-          {{ . | markdownify }}
+          {{ . | $.RenderString (dict "display" "block") }}
         </div>
       {{ end }}
     </header>
