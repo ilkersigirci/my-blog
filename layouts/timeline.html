@@ -18,7 +18,9 @@
       {{ end }}
 
       {{ with .Description }}
-        <p>{{ . }}</p>
+        <div class="prose prose-neutral dark:prose-invert max-w-none">
+          {{ . | markdownify }}
+        </div>
       {{ end }}
     </header>
 

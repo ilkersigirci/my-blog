@@ -1,10 +1,8 @@
 ---
 title: "Journey"
-description: "My professional and academic journey through the years"
+description: "My professional and academic journey through the years. For more information about me, please visit [About](/about)."
 layout: "timeline"
 ---
-
-For more information about me, please visit [About](/about).
 
 ## 2025
 
