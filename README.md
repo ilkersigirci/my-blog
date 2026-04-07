@@ -26,12 +26,14 @@ hugo server -D --bind 0.0.0.0
 
 Update the theme
 ```bash
-# Update the submodule to the latest commit
-git submodule update --remote themes/hugo-narrow
+# Pin hugo-narrow to a specific tag
+TAG=v1.3.6
+git -C themes/hugo-narrow fetch --tags
+git -C themes/hugo-narrow checkout "$TAG"
 
 # Push it to the github
 git add themes/hugo-narrow
-git commit -m "Update hugo-narrow submodule to latest"
+git commit -m "Update hugo-narrow submodule to $TAG"
 ```
 
 ## Copilot
