@@ -3,7 +3,7 @@ title: "About"
 layout: "about"
 date: 2024-05-01
 toc: false
-summary: "Machine Learning Engineer based in Ankara, Turkey"
+summary: "Senior Machine Learning Engineer based in Ankara, Turkey"
 links:
   - name: "GitHub"
     url: "https://github.com/ilkersigirci"

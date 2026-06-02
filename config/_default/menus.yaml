@@ -1,20 +1,19 @@
 main:
-  - name: Journey
-    pageRef: /journey
-    weight: 10
-    params:
-      icon: chart
   - name: Posts
     pageRef: /posts
-    weight: 20
+    weight: 10
     params:
       icon: posts
   - name: Projects
     pageRef: /projects
-    weight: 30
+    weight: 20
     params:
       icon: projects
-
+  - name: Resume
+    pageRef: /resume
+    weight: 30
+    params:
+      icon: file-text
   - name: More
     weight: 40
     params:
