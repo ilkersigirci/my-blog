@@ -1,9 +1,9 @@
 # Basic site info with SEO
 description: "A modern, clean, and minimal personal blog built with Hugo Narrow theme"
-keywords: ["Blog", "Ilkerflix", "Programming"]
+keywords: ["Blog", "Programming"]
 defaultAuthor: "İlker SIĞIRCI"
 language: "en-US"
-shortName: "IlkerflixBlog"  # PWA
+shortName: "ilkersigirci-blog"  # PWA
 images:
 - "/images/og-default.avif"
 
