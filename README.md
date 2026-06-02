@@ -43,3 +43,11 @@ Build Configuration
 - Framework Preset: Hugo
 - Build Command: `hugo --gc --minify`
 - Publish Directory: `public`
+
+Environment Variables
+
+- `HUGO_VERSION`: `0.158.0`
+
+Set the variable for both Production and Preview deployments. The
+`hugo-narrow` theme requires Hugo `0.158.0` or newer, while Cloudflare Pages may
+default to an older Hugo release.
