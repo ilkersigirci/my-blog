@@ -36,14 +36,6 @@ git add themes/hugo-narrow
 git commit -m "Update hugo-narrow submodule to $TAG"
 ```
 
-## Copilot
-
-To run the hugo prompt file, in the copilot window
-
-```bash
-/hugo refactor the project
-```
-
 ## Cloudflare.Pages
 
 Build Configuration

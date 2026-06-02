@@ -1,0 +1,4 @@
+interface:
+  display_name: "Update Hugo Narrow Theme"
+  short_description: "Pin and commit the hugo-narrow theme submodule to a tag."
+  default_prompt: "Update the hugo-narrow theme submodule to the requested tag."
