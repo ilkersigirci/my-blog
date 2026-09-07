@@ -6,6 +6,7 @@ fastapi-template:
   - title: "Documentation"
     description: "Project Documentation"
     url: "https://ilkersigirci.github.io/fastapi-template"
+    icon: "/icons/doc.svg"
 
 
 langgraph-openai-serve:
@@ -16,6 +17,7 @@ langgraph-openai-serve:
   - title: "Documentation"
     description: "Project Documentation"
     url: "https://ilkersigirci.github.io/langgraph-openai-serve"
+    icon: "/icons/doc.svg"
 
 my-thesis:
   - title: "Github"
@@ -25,6 +27,7 @@ my-thesis:
   - title: "Thesis"
     description: "PDF"
     url: "pdfs/Thesis.pdf"
+    icon: "/icons/doc.svg"
 
 python-template:
   - title: "Github"
@@ -34,3 +37,4 @@ python-template:
   - title: "Documentation"
     description: "Project Documentation"
     url: "https://ilkersigirci.github.io/python-template"
+    icon: "/icons/doc.svg"
